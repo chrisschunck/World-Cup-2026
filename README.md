@@ -35,11 +35,10 @@ Basta abrir o arquivo index.html em um navegador moderno.
 Os dados são carregados dinamicamente a partir de profile.json (artilharia) e arrays JavaScript (jogos e grupos).
 
 ## 🗄️ Database
-Não há banco de dados relacional.
+Bando de dados não relacional
 Os dados são mantidos em JSON e arrays JavaScript, simulando uma API REST.
 
 ## 🚀 Future Features
-Upload dinâmico de imagens dos jogadores
 
 Dashboard com estatísticas avançadas (passes, finalizações, cartões)
 
@@ -48,5 +47,3 @@ Integração com API oficial da FIFA
 Modo offline com IndexedDB
 
 Exportação de relatórios em PDF
-
-Testes unitários com Jest
