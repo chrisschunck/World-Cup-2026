@@ -1,4 +1,4 @@
-# ⚽ Copa 2026 — Artilharia e Resultados
+# 🏆 Copa 2026 — Artilharia e Resultados
 Projeto desenvolvido com o objetivo de aplicar conceitos de separação de responsabilidades em aplicações web utilizando HTML, CSS, JavaScript e JSON, explorando boas práticas de organização, manipulação de dados dinâmicos e renderização de conteúdo interativo.
 
 ## 📌 Objective
