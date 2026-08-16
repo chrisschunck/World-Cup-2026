@@ -1,0 +1,458 @@
+[
+  {
+    "foto": "https://wallpapers.com/images/hd/france-national-football-team-kylian-mbappe-948gnr0kqjsf9s0a.jpg",
+    "posicao": 1,
+    "jogador": "Kylian Mbappé",
+    "selecao": "França",
+    "gols": 10,
+    "assistencias": 4
+  },
+  {
+    "foto": "https://tse1.mm.bing.net/th/id/OIP.zzipDp0uhP2MsCEtQ7ow0gHaE3?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 2,
+    "jogador": "Lionel Messi",
+    "selecao": "Argentina",
+    "gols": 8,
+    "assistencias": 4
+  },
+  {
+    "foto": "https://wallpapercave.com/wp/wp15419190.jpg",
+    "posicao": 3,
+    "jogador": "Jude Bellingham",
+    "selecao": "Inglaterra",
+    "gols": 7,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Erling_Haaland_June_2025.jpg/960px-Erling_Haaland_June_2025.jpg",
+    "posicao": 4,
+    "jogador": "Erling Haaland",
+    "selecao": "Noruega",
+    "gols": 7,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://e0.365dm.com/25/09/2048x1152/skysports-ousmane-dembele-psg_7028938.jpg?20250922221413",
+    "posicao": 5,
+    "jogador": "Ousmane Dembélé",
+    "selecao": "França",
+    "gols": 6,
+    "assistencias": 2
+  },
+  {
+    "foto": "https://assets.goal.com/images/v3/blt46536530946a51cb/GOAL%20-%20Blank%20WEB%20-%20Facebook%20-%202025-09-07T132114.638.png?auto=webp&format=pjpg&width=3840&quality=60",
+    "posicao": 6,
+    "jogador": "Harry Kane",
+    "selecao": "Inglaterra",
+    "gols": 6,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://ds-images.bolavip.com/news/image?src=https://images.bolavip.com/webp/en/full/BUS_20250608_BUS_414268_oyarzabal-spain-celly-1024x576_2c633f56.webp&width=1024&height=576",
+    "posicao": 7,
+    "jogador": "Mikel Oyarzabal",
+    "selecao": "Espanha",
+    "gols": 5,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://tse4.mm.bing.net/th/id/OIP.Br5w3q1YSEvuARL4QCSjcQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 8,
+    "jogador": "Ismaïla Sarr",
+    "selecao": "Senegal",
+    "gols": 4,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://media.bolavip.com/wp-content/uploads/sites/10/2026/06/11161955/julian-quinones-2-740x416.webp",
+    "posicao": 9,
+    "jogador": "Julián Quiñones",
+    "selecao": "México",
+    "gols": 4,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://static.gazetaesportiva.com/uploads/imagem/2022/12/06/52530360874_bfefc56d92_o.jpg",
+    "posicao": 10,
+    "jogador": "Vinícius Júnior",
+    "selecao": "Brasil",
+    "gols": 4,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://cdn.mos.cms.futurecdn.net/RF2xZPBMD6NXq7cKpgwcAJ-1200-80.jpg",
+    "posicao": 11,
+    "jogador": "Bukayo Saka",
+    "selecao": "Inglaterra",
+    "gols": 3,
+    "assistencias": 3
+  },
+  {
+    "foto": "https://images.performgroup.com/di/library/omnisport/31/cb/undav_1qls67qeh0cy91i6571xc89i0b.jpg?t=-696862721",
+    "posicao": 12,
+    "jogador": "Deniz Undav",
+    "selecao": "Alemanha",
+    "gols": 3,
+    "assistencias": 2
+  },
+  {
+    "foto": "https://img.nzz.ch/2025/11/16/638db950-96b7-4f91-98c7-485aecdeb174.jpg?width=2400&height=1600&fit=crop&quality=75&auto=webp",
+    "posicao": 13,
+    "jogador": "Johan Manzambi",
+    "selecao": "Suíça",
+    "gols": 3,
+    "assistencias": 2
+  },
+  {
+    "foto": "https://ichef.bbci.co.uk/ace/standard/2560/cpsprodpb/d818/live/7bc34ab0-6614-11ef-a04d-25d7e12eecf1.jpg",
+    "posicao": 14,
+    "jogador": "Romelu Lukaku",
+    "selecao": "Bélgica",
+    "gols": 3,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://media.lmneuquen.com/p/1940395c4889a5bdf7bf2be0c912d29c/adjuntos/195/imagenes/007/734/0007734521/770x0/smart/lautaro-3jpgwebp.png",
+    "posicao": 15,
+    "jogador": "Lautaro Martínez",
+    "selecao": "Argentina",
+    "gols": 3,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://wallpapers.com/images/hd/belgium-national-football-team-charles-de-ketelaere-wx503im03p12mij9.jpg",
+    "posicao": 16,
+    "jogador": "Charles De Ketelaere",
+    "selecao": "Bélgica",
+    "gols": 3,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://images.teamtalk.com/content/uploads/2022/12/17165616/netherlands-forward-cody-gakpo1.jpg",
+    "posicao": 17,
+    "jogador": "Cody Gakpo",
+    "selecao": "Países Baixos",
+    "gols": 3,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://www.les-transferts.com/wp-content/uploads/2023/07/Bradley-Barcola.jpg",
+    "posicao": 18,
+    "jogador": "Bradley Barcola",
+    "selecao": "França",
+    "gols": 3,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://www.shutterstock.com/editorial/image-editorial/M5T7Q050MbjeY943Mjc2NTI=/brian-brobbey-netherlands-looks-on-during-uefa-550nw-14783658ew.jpg",
+    "posicao": 19,
+    "jogador": "Brian Brobbey",
+    "selecao": "Países Baixos",
+    "gols": 3,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://ichef.bbci.co.uk/ace/standard/1680/cpsprodpb/7945/live/a2144a20-431c-11f1-89cc-ff708b4a3776.jpg",
+    "posicao": 20,
+    "jogador": "Elijah Just",
+    "selecao": "Nova Zelândia",
+    "gols": 3,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5542,h_3117,x_0,y_246/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/si/01jx2jf17xg617q49fse.jpg",
+    "posicao": 21,
+    "jogador": "Matheus Cunha",
+    "selecao": "Brasil",
+    "gols": 3,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://people.com/thmb/7hr-C7ziOsQVaJPY4m7H2P6qg24=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/Folarin-Balogun-1-070226-3b16944e6f39473a91e324a43f964960.jpg",
+    "posicao": 22,
+    "jogador": "Folarin Balogun",
+    "selecao": "Estados Unidos",
+    "gols": 3,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://sportsmanbiography.com/wp-content/uploads/2022/11/Raul-Jimenez-Green-Jersey.jpg",
+    "posicao": 23,
+    "jogador": "Raúl Jiménez",
+    "selecao": "México",
+    "gols": 3,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://d3nfwcxd527z59.cloudfront.net/content/uploads/2021/09/05143130/kai-havertz-germany-1104x630.jpg",
+    "posicao": 24,
+    "jogador": "Kai Havertz",
+    "selecao": "Alemanha",
+    "gols": 3,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://cdn.themag.co.uk/assets/yoane-wissa-dr-congo-newcastle-united-nufc-2000.jpg",
+    "posicao": 25,
+    "jogador": "Yoane Wissa",
+    "selecao": "República Democrática do Congo",
+    "gols": 3,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://tse1.explicit.bing.net/th/id/OIF.k1gB37J0QOoogVKKMLOaaA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 26,
+    "jogador": "Ismael Saibari",
+    "selecao": "Marrocos",
+    "gols": 3,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://tse3.mm.bing.net/th/id/OIP.A5rt52YElNYTYZJzdbp0yAHaFf?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 27,
+    "jogador": "Jonathan David",
+    "selecao": "Canadá",
+    "gols": 3,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://editorial.uefa.com/resources/027b-16a6e8afa2a8-7441ca4b9ac5-1000/cristiano_ronaldo_of_portugal_celebrates_after_scoring_a.jpeg",
+    "posicao": 28,
+    "jogador": "Cristiano Ronaldo",
+    "selecao": "Portugal",
+    "gols": 3,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://th.bing.com/th?id=OIF.R1c00he615fdzy5%2bbcclmw&r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 29,
+    "jogador": "Crysencio Summerville",
+    "selecao": "Países Baixos",
+    "gols": 2,
+    "assistencias": 2
+  },
+  {
+    "foto": "https://fieldlevelmedia.com/wp-content/uploads/2026/08/29319743-1024x683.jpg",
+    "posicao": 30,
+    "jogador": "Breel Embolo",
+    "selecao": "Suíça",
+    "gols": 2,
+    "assistencias": 2
+  },
+  {
+    "foto": "https://www.thesun.co.uk/wp-content/uploads/2026/07/epa13068415-leandro-trossard-belgium-looks-1091411148.jpg?resize=846",
+    "posicao": 31,
+    "jogador": "Leandro Trossard",
+    "selecao": "Bélgica",
+    "gols": 2,
+    "assistencias": 2
+  },
+  {
+    "foto": "https://sport.le360.ma/resizer/v2/EIIMRZRDLFIXDFMRJPFTPHXMV4.jpg?auth=2c4148da566bb2524ac3e4382f69df715bfbde04d5db02befc3020c655ee2a95&smart=true&width=1216&height=684",
+    "posicao": 32,
+    "jogador": "Soufiane Rahimi",
+    "selecao": "Marrocos",
+    "gols": 2,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://wp.inews.co.uk/wp-content/uploads/2022/02/PRI_218812593.jpg?resize=640,360&strip=all&quality=90",
+    "posicao": 33,
+    "jogador": "Nicolas Pépé",
+    "selecao": "Costa do Marfim",
+    "gols": 2,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://tse4.mm.bing.net/th/id/OIP.xUts2GO9shJFZiI5CAbKSQHaFB?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 34,
+    "jogador": "Pape Gueye",
+    "selecao": "Senegal",
+    "gols": 2,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://imgs.elpais.com.uy/dims4/default/9675a66/2147483647/strip/true/crop/3328x2288+52+0/resize/1440x990!/quality/90/?url=https%3A%2F%2Fel-pais-uruguay-production-web.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fdf%2Fad%2Fb69f7b8647acbb68c3cde5f8c756%2Fgol.jpg",
+    "posicao": 35,
+    "jogador": "Maximiliano Araújo",
+    "selecao": "Uruguai",
+    "gols": 2,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://www.cafonline.com/media/x5xhke3m/riyad-mahrez-of-algeria.jpg",
+    "posicao": 36,
+    "jogador": "Riyad Mahrez",
+    "selecao": "Argélia",
+    "gols": 2,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://healthyceleb.com/wp-content/uploads/2022/12/Ramin-Rezaeian-as-seen-in-an-Instagram-Post-in-November-2022.jpg",
+    "posicao": 37,
+    "jogador": "Ramin Rezaeian",
+    "selecao": "Irã",
+    "gols": 2,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://e0.365dm.com/24/06/1600x900/skysports-euro-2024-football_6594468.jpg?20240629181355",
+    "posicao": 38,
+    "jogador": "Ruben Vargas",
+    "selecao": "Suíça",
+    "gols": 2,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://sportsmanbiography.com/wp-content/uploads/2022/12/Ayase-Ueda-In-Blue-Jersey.jpg",
+    "posicao": 39,
+    "jogador": "Ayase Ueda",
+    "selecao": "Japão",
+    "gols": 2,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://tse3.mm.bing.net/th/id/OIP.oClSTeXOYJN7f9vccIfJZQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 40,
+    "jogador": "Mostafa Ziko",
+    "selecao": "Egito",
+    "gols": 2,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://tse3.mm.bing.net/th/id/OIP.n8aJK2CDLEOSNFcY9_A9ogAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 41,
+    "jogador": "Malik Tillman",
+    "selecao": "Estados Unidos",
+    "gols": 2,
+    "assistencias": 1
+  },
+  {
+    "foto": "https://tse3.mm.bing.net/th/id/OIP.q4gLMekamhn10AbvxPRAoAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 42,
+    "jogador": "Ermin Mahmic",
+    "selecao": "Bósnia e Herzegovina",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://wiwsport.com/wp-content/uploads/2025/11/gettyimages-2220476991-2048x2048-1.jpg",
+    "posicao": 43,
+    "jogador": "Habib Diarra",
+    "selecao": "Senegal",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://tse2.mm.bing.net/th/id/OIP.eUkz1FmtKljYIvreMATfvwHaD4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 44,
+    "jogador": "Marko Arnautovic",
+    "selecao": "Áustria",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://www.ole.com.ar/images/2025/12/28/bCeCkDDJb_1290x760__2.jpg#1766958718538",
+    "posicao": 45,
+    "jogador": "Amad Diallo",
+    "selecao": "Costa do Marfim",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://th.bing.com/th/id/R.2e71ada75fdaa6d535ff59d5770b9707?rik=jKsIrquNSkJSDw&pid=ImgRaw&r=0",
+    "posicao": 46,
+    "jogador": "Cyle Larin",
+    "selecao": "Canadá",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://cdn1.geordiebootboys.com/uploads/16/2025/11/anthony-elanga-for-sweden-1763283900994.jpg",
+    "posicao": 47,
+    "jogador": "Anthony Elanga",
+    "selecao": "Suécia",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://e0.365dm.com/24/08/1600x900/skysports-mikel-merino-spain_6647169.jpg?20240804143449",
+    "posicao": 48,
+    "jogador": "Mikel Merino",
+    "selecao": "Espanha",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://tse3.mm.bing.net/th/id/OIF.H5elSlXugCT8JhjyfaoOMw?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 49,
+    "jogador": "Daichi Kamada",
+    "selecao": "Japão",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://livesport-ott-images.ssl.cdn.cra.cz/r900xfq60/9332884d-2ade-4ba5-a7b6-66e616b17e77.jpeg",
+    "posicao": 50,
+    "jogador": "Yasin Ayari",
+    "selecao": "Suécia",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://tse4.mm.bing.net/th/id/OIP.kJT-nWqlwHgl04Mk4FjKeAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 51,
+    "jogador": "Emam Ashour",
+    "selecao": "Egito",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://tse4.mm.bing.net/th/id/OIP.0fQX5oatOEmZoTtNrQKvsgHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 52,
+    "jogador": "Dan Ndoye",
+    "selecao": "Suíça",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://www.semana.com/resizer/v2/CMYLLYXEWJGXVMCRZCE34JHIDU.jpg?auth=72d77712069bbae5f953f6863388ece648c7cf68b00db5532d0fead28a290564&smart=true&quality=75&width=1280&fitfill=false",
+    "posicao": 53,
+    "jogador": "Daniel Muñoz",
+    "selecao": "Colômbia",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://cdn.foot-africa.com/20250819/f4e98a2b72bc3619fb30527dd07e551d50db673224fd8baaec7867f746dc15c7-1200-675.jpg",
+    "posicao": 54,
+    "jogador": "Azzedine Ounahi",
+    "selecao": "Marrocos",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://tse4.mm.bing.net/th/id/OIP.qfU7vnBO5UPm14ZTezH9HAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 55,
+    "jogador": "Youri Tielemans",
+    "selecao": "Bélgica",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://tse3.mm.bing.net/th/id/OIP.7w5Puw392y_VIS1WUx3WUQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 56,
+    "jogador": "Pedro Porro",
+    "selecao": "Espanha",
+    "gols": 2,
+    "assistencias": 0
+  },
+  {
+    "foto": "https://tse4.mm.bing.net/th/id/OIP.duWtZL20y432bSkaWr05PQHaEk?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "posicao": 57,
+    "jogador": "Enzo Fernández",
+    "selecao": "Argentina",
+    "gols": 2,
+    "assistencias": 0
+  }
+]

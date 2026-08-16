@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copa do Mundo 2026 | EUA, México e Canadá</title>
+  <meta name="description" content="Tudo sobre a Copa do Mundo FIFA 2026: artilharia, jogos, tabela de grupos e mais.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="logo">
+        <span class="logo__ball">⚽</span>
+        <h2 class="logo__text">World Cup <span class="logo__year">2026</span></h2>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">Home</a></li>
+          <li><a href="#artilharia" class="nav__link">Artilharia</a></li>
+          <li><a href="#jogos" class="nav__link">Jogos</a></li>
+          <li><a href="#tabela" class="nav__link">Tabela</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content container">
+        <p class="eyebrow">FIFA World Cup™ · Encerrada em 19 de julho de 2026</p>
+        <h1 class="hero__title">COPA DO<br>MUNDO <span class="hero__title--gold">2026</span></h1>
+        <p class="hero__subtitle">🇪🇸 A Espanha é a campeã: venceu a Argentina por 1 a 0 (na prorrogação) na final, em East Rutherford, e conquistou seu 2º título mundial.</p>
+
+        <div class="hero__stats" id="heroStats">
+          <div class="stat">
+            <span class="stat__number">48</span>
+            <span class="stat__label">Seleções</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">104</span>
+            <span class="stat__label">Jogos</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">16</span>
+            <span class="stat__label">Cidades-sede</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">03</span>
+            <span class="stat__label">Países</span>
+          </div>
+        </div>
+
+        <div class="hero__actions">
+          <a href="#jogos" class="btn btn--gold">Ver jogos</a>
+          <a href="#tabela" class="btn btn--outline">Ver tabela</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ARTILHARIA ===== -->
+    <section id="artilharia" class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num">01</span>
+          <div>
+            <h3 class="section__title">Artilharia</h3>
+            <p class="section__subtitle">Os artilheiros da <span class="text-gold">Copa do Mundo de 2026</span></p>
+          </div>
+        </div>
+
+        <div class="scorers__controls">
+          <input type="search" id="scorerSearch" class="input" placeholder="Buscar jogador ou seleção...">
+          <span class="scorers__badge">🏆 Chuteira de Ouro: Kylian Mbappé (10 gols)</span>
+        </div>
+
+        <div id="scorersPodium" class="podium"></div>
+
+        <div class="table-wrap">
+          <table class="table" id="scorersTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Jogador</th>
+                <th>Seleção</th>
+                <th class="text-center">Gols</th>
+              </tr>
+            </thead>
+            <tbody id="scorersBody">
+              <!-- preenchido via JS -->
+            </tbody>
+          </table>
+        </div>
+        <p id="scorersEmpty" class="empty-state hidden">Nenhum jogador encontrado.</p>
+      </div>
+    </section>
+
+    <!-- ===== JOGOS ===== -->
+    <section id="jogos" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num">02</span>
+          <div>
+            <h3 class="section__title">Jogos</h3>
+            <p class="section__subtitle">Confira os confrontos da <span class="text-gold">Copa do Mundo de 2026</span></p>
+          </div>
+        </div>
+
+        <div class="tabs" id="matchTabs">
+          <button class="tab tab--active" data-phase="todos">Todos</button>
+          <button class="tab" data-phase="Fase de Grupos">Fase de Grupos</button>
+          <button class="tab" data-phase="Round of 32">Round of 32</button>
+          <button class="tab" data-phase="Round of 16">Round of 16</button>
+          <button class="tab" data-phase="Quartas de Final">Quartas</button>
+          <button class="tab" data-phase="Semifinal">Semifinal</button>
+          <button class="tab" data-phase="3º Lugar">3º Lugar</button>
+          <button class="tab" data-phase="Final">Final</button>
+        </div>
+
+        <div id="matchesGrid" class="matches-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== TABELA ===== -->
+    <section id="tabela" class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num">03</span>
+          <div>
+            <h3 class="section__title">Tabela</h3>
+            <p class="section__subtitle">Classificação por grupo da <span class="text-gold">Copa do Mundo de 2026</span></p>
+          </div>
+        </div>
+
+        <div class="group-select" id="groupSelect"></div>
+
+        <div class="table-wrap">
+          <table class="table table--standings" id="standingsTable">
+            <thead>
+              <tr>
+                <th class="text-left">Seleção</th>
+                <th class="text-center">Pts</th>
+                <th class="text-center">SG</th>
+                <th class="text-center">Situação</th>
+              </tr>
+            </thead>
+            <tbody id="standingsBody"></tbody>
+          </table>
+        </div>
+        <p class="table-note">Classificação final real (3 jogos por grupo). Os dois primeiros de cada grupo avançam direto, além dos 8 melhores terceiros colocados — 24 + 8 = 32 seleções na fase eliminatória.</p>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="section section--alt">
+      <div class="container sobre__grid">
+        <div>
+          <div class="section__head section__head--nolabel">
+            <span class="section__num">04</span>
+            <div>
+              <h3 class="section__title">Sobre</h3>
+              <p class="section__subtitle">Conheça mais um <span class="text-gold">pouco</span></p>
+            </div>
+          </div>
+          <p class="sobre__text">
+            A Copa do Mundo FIFA de 2026 foi a 23ª edição do torneio e a primeira sediada por três países ao mesmo tempo:
+            Estados Unidos, México e Canadá. Também foi a primeira a reunir 48 seleções, distribuídas em 12 grupos de 4 times,
+            com um inédito mata-mata de "Round of 32" antes das oitavas de final.
+          </p>
+          <p class="sobre__text">
+            Na final, disputada no New York/New Jersey Stadium, a <strong class="text-gold">Espanha</strong> bateu a
+            <strong class="text-gold">Argentina</strong> por 1 a 0 na prorrogação e conquistou seu segundo título mundial
+            (o primeiro foi em 2010). A Inglaterra ficou com o terceiro lugar ao vencer a França por 6 a 4 em um jogo eletrizante,
+            e Kylian Mbappé foi o artilheiro do torneio pela segunda vez seguida, com 10 gols.
+          </p>
+          <div class="sobre__facts">
+            <div class="fact">
+              <span class="fact__icon">🏆</span>
+              <div><strong>Campeã</strong><br>Espanha (2º título) — venceu a Argentina na final</div>
+            </div>
+            <div class="fact">
+              <span class="fact__icon">🥉</span>
+              <div><strong>3º e 4º lugares</strong><br>Inglaterra 6 x 4 França</div>
+            </div>
+            <div class="fact">
+              <span class="fact__icon">👟</span>
+              <div><strong>Chuteira de Ouro</strong><br>Kylian Mbappé (França) — 10 gols</div>
+            </div>
+            <div class="fact">
+              <span class="fact__icon">📅</span>
+              <div><strong>Período</strong><br>11 de junho a 19 de julho de 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre__card">
+          <h4>Sobre este projeto</h4>
+          <p>
+            Este site é um projeto pessoal desenvolvido em HTML, CSS e JavaScript puros, sem frameworks,
+            como exercício de front-end com foco em dados dinâmicos, responsividade e interatividade.
+          </p>
+          <p class="sobre__disclaimer">Grupos, resultados e artilharia refletem os dados reais e oficiais da Copa do Mundo 2026 (fontes: FIFA, ESPN, NBC Sports, Goal.com).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="section section--contact">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__num">05</span>
+          <div>
+            <h3 class="section__title">Contato</h3>
+            <p class="section__subtitle">Para assuntos <span class="text-gold">pessoais</span></p>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="https://wa.me/5511945685173" target="_blank" rel="noopener">
+            <span class="contact-card__icon">💬</span>
+            <p class="contact-card__label">WhatsApp</p>
+            <span class="contact-card__value">(11) 94568-5173</span>
+          </a>
+          <a class="contact-card" href="https://linkedin.com/in/chrisschunck" target="_blank" rel="noopener">
+            <span class="contact-card__icon">💼</span>
+            <p class="contact-card__label">LinkedIn</p>
+            <span class="contact-card__value">@chrisschunck</span>
+          </a>
+          <a class="contact-card" href="mailto:christian.schunck10@gmail.com">
+            <span class="contact-card__icon">✉️</span>
+            <p class="contact-card__label">Email</p>
+            <span class="contact-card__value">christian.schunck10@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© Todos os direitos reservados | Christian Schunck</p>
+      <div class="footer__links">
+        <a href="https://wa.me/5511945685173" target="_blank" rel="noopener">💬 (11) 94568-5173</a>
+        <a href="https://linkedin.com/in/chrisschunck" target="_blank" rel="noopener">💼 LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
