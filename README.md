@@ -31,8 +31,8 @@ Fetch API
 Responsividade com CSS
 
 ## ▶️ Execution
-Basta abrir o arquivo index.html em um navegador moderno.
-Os dados são carregados dinamicamente a partir de profile.json (artilharia) e arrays JavaScript (jogos e grupos).
+Deploy no Vercel:
+https://world-cup-2026-steel-alpha.vercel.app/
 
 ## 🗄️ Database
 Bando de dados não relacional
