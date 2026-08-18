@@ -25,6 +25,7 @@
           <li><a href="#hero" class="nav__link">Home</a></li>
           <li><a href="#artilharia" class="nav__link">Artilharia</a></li>
           <li><a href="#jogos" class="nav__link">Jogos</a></li>
+          <li><a href="#estadios" class="nav__link">Estádios</a></li>
           <li><a href="#tabela" class="nav__link">Tabela</a></li>
           <li><a href="#sobre" class="nav__link">Sobre</a></li>
           <li><a href="#contato" class="nav__link">Contato</a></li>
@@ -135,11 +136,34 @@
       </div>
     </section>
 
-    <!-- ===== TABELA ===== -->
-    <section id="tabela" class="section">
+    <!-- ===== ESTÁDIOS ===== -->
+    <section id="estadios" class="section">
       <div class="container">
         <div class="section__head">
           <span class="section__num">03</span>
+          <div>
+            <h3 class="section__title">Estádios</h3>
+            <p class="section__subtitle">Os 16 palcos da <span class="text-gold">Copa do Mundo de 2026</span></p>
+          </div>
+        </div>
+
+        <div class="scorers__controls">
+          <input type="search" id="stadiumSearch" class="input" placeholder="Buscar estádio, cidade ou país...">
+          <span class="scorers__badge">🏟️ 16 Cidades-Sede · 3 Países</span>
+        </div>
+
+        <div id="stadiumsGrid" class="stadiums-grid">
+          <!-- preenchido via JS -->
+        </div>
+        <p id="stadiumsEmpty" class="empty-state hidden">Nenhum estádio encontrado.</p>
+      </div>
+    </section>
+
+    <!-- ===== TABELA ===== -->
+    <section id="tabela" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num">04</span>
           <div>
             <h3 class="section__title">Tabela</h3>
             <p class="section__subtitle">Classificação por grupo da <span class="text-gold">Copa do Mundo de 2026</span></p>
@@ -166,11 +190,11 @@
     </section>
 
     <!-- ===== SOBRE ===== -->
-    <section id="sobre" class="section section--alt">
+    <section id="sobre" class="section">
       <div class="container sobre__grid">
         <div>
           <div class="section__head section__head--nolabel">
-            <span class="section__num">04</span>
+            <span class="section__num">05</span>
             <div>
               <h3 class="section__title">Sobre</h3>
               <p class="section__subtitle">Conheça mais um <span class="text-gold">pouco</span></p>
@@ -219,10 +243,10 @@
     </section>
 
     <!-- ===== CONTATO ===== -->
-    <section id="contato" class="section section--contact">
+    <section id="contato" class="section section--contact section--alt">
       <div class="container">
         <div class="section__head section__head--center">
-          <span class="section__num">05</span>
+          <span class="section__num">06</span>
           <div>
             <h3 class="section__title">Contato</h3>
             <p class="section__subtitle">Para assuntos <span class="text-gold">pessoais</span></p>
