@@ -386,6 +386,7 @@ function renderStadiums() {
         </p>
         
         <p class="stadium-card__capacity">Capacidade: ~${s.capacidade.toLocaleString('pt-BR')} lugares</p>
+        <hr>
         
         ${badgeText ? `<span class="stadium-card__tag">${badgeText}</span>` : ''}
       </article>
