@@ -472,7 +472,73 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   padding-top: 12px;
 }
 
+/* =========================================================
+   ESTADIOS
+   ========================================================= */
+.stadiums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
 
+.stadium-card {
+  background: var(--green-800);
+  border: 1px solid rgba(244, 241, 232, 0.08);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.stadium-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+}
+
+.stadium-card__icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.stadium-card__title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--cream);
+  margin: 0 0 4px;
+  letter-spacing: 0.5px;
+}
+
+.stadium-card__location {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+
+.stadium-card__capacity {
+  font-size: 0.95rem;
+  color: var(--cream-dim);
+  margin: 0 0 16px;
+}
+
+.stadium-card__tag {
+  display: inline-block;
+  margin-top: auto;
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  background: rgba(232, 185, 35, 0.15);
+  color: var(--gold);
+  padding: 4px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+/* =========================================================
+   TABELA
+   ========================================================= */
 .group-select {
   display: flex;
   flex-wrap: wrap;
@@ -495,6 +561,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .status-cell { font-size: 0.78rem; color: var(--cream-dim); white-space: nowrap; }
 .table-note { color: var(--muted); font-size: 0.82rem; margin-top: 14px; }
 
+/* =========================================================
+   SOBRE & CONTATO
+   ========================================================= */
 .sobre__grid {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
@@ -549,7 +618,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .footer p { margin: 0; color: var(--muted); font-size: 0.85rem; }
 .footer__links { display: flex; gap: 20px; font-size: 0.85rem; }
 .footer__links a:hover { color: var(--gold); }
-
 
 .back-to-top {
   position: fixed;
