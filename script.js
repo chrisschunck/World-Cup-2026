@@ -12,6 +12,9 @@ function initials(name) {
     .toUpperCase();
 }
 
+/* =========================================================
+   MAPEAMENTO DE EMOJIS (Para Artilharia e Tabela)
+   ========================================================= */
 const FLAGS = {
   'França': '🇫🇷', 'Argentina': '🇦🇷', 'Inglaterra': '🏴', 'Noruega': '🇳🇴',
   'Espanha': '🇪🇸', 'Senegal': '🇸🇳', 'México': '🇲🇽', 'Brasil': '🇧🇷',
@@ -26,10 +29,69 @@ const FLAGS = {
   'Arábia Saudita': '🇸🇦', 'Catar': '🇶🇦', 'Escócia': '🏴', 'Turquia': '🇹🇷',
   'Tchéquia': '🇨🇿', 'África do Sul': '🇿🇦', 'Iraque': '🇮🇶'
 };
+
 function flag(team) { return FLAGS[team] || '🏳️'; }
 
 /* =========================================================
-   1. ARTILHARIA — fetch profile.json (Golden Boot real, Goal.com)
+   MAPEAMENTO DE BANDEIRAS EM IMAGEM (Para Jogos)
+   ========================================================= */
+const TEAM_FLAGS = {
+  'México': 'https://flagcdn.com/w80/mx.png',
+  'África do Sul': 'https://flagcdn.com/w80/za.png',
+  'Brasil': 'https://flagcdn.com/w80/br.png',
+  'Marrocos': 'https://flagcdn.com/w80/ma.png',
+  'Argentina': 'https://flagcdn.com/w80/ar.png',
+  'Argélia': 'https://flagcdn.com/w80/dz.png',
+  'Espanha': 'https://flagcdn.com/w80/es.png',
+  'Arábia Saudita': 'https://flagcdn.com/w80/sa.png',
+  'Alemanha': 'https://flagcdn.com/w80/de.png',
+  'Curaçao': 'https://flagcdn.com/w80/cw.png',
+  'Haiti': 'https://flagcdn.com/w80/ht.png',
+  'Noruega': 'https://flagcdn.com/w80/no.png',
+  'Senegal': 'https://flagcdn.com/w80/sn.png',
+  'Escócia': 'https://flagcdn.com/w80/gb-sct.png',
+  'Canadá': 'https://flagcdn.com/w80/ca.png',
+  'Japão': 'https://flagcdn.com/w80/jp.png',
+  'Paraguai': 'https://flagcdn.com/w80/py.png',
+  'Países Baixos': 'https://flagcdn.com/w80/nl.png',
+  'França': 'https://flagcdn.com/w80/fr.png',
+  'Suécia': 'https://flagcdn.com/w80/se.png',
+  'Equador': 'https://flagcdn.com/w80/ec.png',
+  'Bélgica': 'https://flagcdn.com/w80/be.png',
+  'Áustria': 'https://flagcdn.com/w80/at.png',
+  'Cabo Verde': 'https://flagcdn.com/w80/cv.png',
+  'Colômbia': 'https://flagcdn.com/w80/co.png',
+  'Gana': 'https://flagcdn.com/w80/gh.png',
+  'Inglaterra': 'https://flagcdn.com/w80/gb-eng.png',
+  'Portugal': 'https://flagcdn.com/w80/pt.png',
+  'Egito': 'https://flagcdn.com/w80/eg.png',
+  'Suíça': 'https://flagcdn.com/w80/ch.png',
+  'Coreia do Sul': 'https://flagcdn.com/w80/kr.png',
+  'Tchéquia': 'https://flagcdn.com/w80/cz.png',
+  'Bósnia e Herzegovina': 'https://flagcdn.com/w80/ba.png',
+  'Catar': 'https://flagcdn.com/w80/qa.png',
+  'Austrália': 'https://flagcdn.com/w80/au.png',
+  'Turquia': 'https://flagcdn.com/w80/tr.png',
+  'Costa do Marfim': 'https://flagcdn.com/w80/ci.png',
+  'Tunísia': 'https://flagcdn.com/w80/tn.png',
+  'Irã': 'https://flagcdn.com/w80/ir.png',
+  'Nova Zelândia': 'https://flagcdn.com/w80/nz.png',
+  'Uruguai': 'https://flagcdn.com/w80/uy.png',
+  'Iraque': 'https://flagcdn.com/w80/iq.png',
+  'Jordânia': 'https://flagcdn.com/w80/jo.png',
+  'Uzbequistão': 'https://flagcdn.com/w80/uz.png',
+  'Panamá': 'https://flagcdn.com/w80/pa.png',
+  'RD Congo': 'https://flagcdn.com/w80/cd.png',
+  'Croácia': 'https://flagcdn.com/w80/hr.png'
+};
+
+function getFlagImage(teamName) {
+  const url = TEAM_FLAGS[teamName] || 'https://via.placeholder.com/80?text=🏳️';
+  return `<img src="${url}" alt="${teamName}" class="match-team__flag-img" style="vertical-align: middle; margin-right: 6px;">`;
+}
+
+/* =========================================================
+   1. ARTILHARIA — fetch profile.json
    ========================================================= */
 let scorersData = [];
 
@@ -109,11 +171,9 @@ function renderScorersTable(list) {
 $('#scorerSearch')?.addEventListener('input', renderScorers);
 
 /* =========================================================
-   2. JOGOS — resultados reais da Copa do Mundo 2026
-   Fontes: FIFA.com, ESPN, CBS Sports, Yahoo Sports, Goal.com
+   2. JOGOS
    ========================================================= */
 const matchesData = [
-  // Fase de Grupos
   { fase: 'Fase de Grupos', casa: 'México', fora: 'África do Sul', golsCasa: 2, golsFora: 0, data: '11 Jun', local: 'Estádio Azteca, Cidade do México' },
   { fase: 'Fase de Grupos', casa: 'Brasil', fora: 'Marrocos', golsCasa: 1, golsFora: 1, data: '13 Jun', local: 'New York/New Jersey Stadium' },
   { fase: 'Fase de Grupos', casa: 'Argentina', fora: 'Argélia', golsCasa: 3, golsFora: 0, data: '14 Jun', local: 'EUA' },
@@ -123,7 +183,6 @@ const matchesData = [
   { fase: 'Fase de Grupos', casa: 'Noruega', fora: 'Senegal', golsCasa: 3, golsFora: 2, data: '23 Jun', local: 'New York/New Jersey Stadium' },
   { fase: 'Fase de Grupos', casa: 'Escócia', fora: 'Brasil', golsCasa: 0, golsFora: 3, data: '24 Jun', local: 'Miami Stadium' },
 
-  // Round of 32
   { fase: 'Round of 32', casa: 'Canadá', fora: 'África do Sul', golsCasa: 1, golsFora: 0, data: '28 Jun', local: 'Los Angeles Stadium', pens: null },
   { fase: 'Round of 32', casa: 'Brasil', fora: 'Japão', golsCasa: 2, golsFora: 1, data: '29 Jun', local: 'Houston Stadium' },
   { fase: 'Round of 32', casa: 'Alemanha', fora: 'Paraguai', golsCasa: 1, golsFora: 1, data: '29 Jun', local: 'EUA', pens: '3-4', vencedorPens: 'Paraguai' },
@@ -135,72 +194,24 @@ const matchesData = [
   { fase: 'Round of 32', casa: 'Argentina', fora: 'Cabo Verde', golsCasa: 3, golsFora: 2, data: '03 Jul', local: 'EUA', aet: true },
   { fase: 'Round of 32', casa: 'Colômbia', fora: 'Gana', golsCasa: 1, golsFora: 0, data: '03 Jul', local: 'EUA' },
 
-  // Round of 16
   { fase: 'Round of 16', casa: 'Marrocos', fora: 'Canadá', golsCasa: 3, golsFora: 0, data: '04 Jul', local: 'EUA' },
   { fase: 'Round of 16', casa: 'Noruega', fora: 'Brasil', golsCasa: 2, golsFora: 1, data: '05 Jul', local: 'New York/New Jersey Stadium' },
   { fase: 'Round of 16', casa: 'Inglaterra', fora: 'México', golsCasa: 3, golsFora: 2, data: '05 Jul', local: 'Estádio Azteca' },
   { fase: 'Round of 16', casa: 'Espanha', fora: 'Portugal', golsCasa: 1, golsFora: 0, data: '06 Jul', local: 'EUA' },
   { fase: 'Round of 16', casa: 'Argentina', fora: 'Egito', golsCasa: 3, golsFora: 2, data: '07 Jul', local: 'EUA' },
 
-  // Quartas de Final
   { fase: 'Quartas de Final', casa: 'França', fora: 'Marrocos', golsCasa: 2, golsFora: 0, data: '09 Jul', local: 'EUA' },
   { fase: 'Quartas de Final', casa: 'Espanha', fora: 'Bélgica', golsCasa: 2, golsFora: 1, data: '10 Jul', local: 'EUA' },
   { fase: 'Quartas de Final', casa: 'Inglaterra', fora: 'Noruega', golsCasa: 2, golsFora: 1, data: '11 Jul', local: 'EUA', aet: true },
   { fase: 'Quartas de Final', casa: 'Argentina', fora: 'Suíça', golsCasa: 3, golsFora: 1, data: '11 Jul', local: 'EUA', aet: true },
 
-  // Semifinal
   { fase: 'Semifinal', casa: 'Espanha', fora: 'França', golsCasa: 2, golsFora: 0, data: '14 Jul', local: 'AT&T Stadium, Arlington' },
   { fase: 'Semifinal', casa: 'Inglaterra', fora: 'Argentina', golsCasa: 1, golsFora: 2, data: '15 Jul', local: 'Mercedes-Benz Stadium, Atlanta' },
 
-  // Disputa de 3º lugar e Final
   { fase: '3º Lugar', casa: 'França', fora: 'Inglaterra', golsCasa: 4, golsFora: 6, data: '18 Jul', local: 'Miami Stadium' },
   { fase: 'Final', casa: 'Espanha', fora: 'Argentina', golsCasa: 1, golsFora: 0, data: '19 Jul', local: 'New York/New Jersey Stadium', aet: true, campeao: true },
 ];
 
-/* =========================================================
-   MAPEAMENTO DE BANDEIRAS (Imagens)
-   ========================================================= */
-const TEAM_FLAGS = {
-  'México': 'https://flagcdn.com/w80/mx.png',
-  'África do Sul': 'https://flagcdn.com/w80/za.png',
-  'Brasil': 'https://flagcdn.com/w80/br.png',
-  'Marrocos': 'https://flagcdn.com/w80/ma.png',
-  'Argentina': 'https://flagcdn.com/w80/ar.png',
-  'Argélia': 'https://flagcdn.com/w80/dz.png',
-  'Espanha': 'https://flagcdn.com/w80/es.png',
-  'Arábia Saudita': 'https://flagcdn.com/w80/sa.png',
-  'Alemanha': 'https://flagcdn.com/w80/de.png',
-  'Curaçao': 'https://flagcdn.com/w80/cw.png',
-  'Haiti': 'https://flagcdn.com/w80/ht.png',
-  'Noruega': 'https://flagcdn.com/w80/no.png',
-  'Senegal': 'https://flagcdn.com/w80/sn.png',
-  'Escócia': 'https://flagcdn.com/w80/gb-sct.png',
-  'Canadá': 'https://flagcdn.com/w80/ca.png',
-  'Japão': 'https://flagcdn.com/w80/jp.png',
-  'Paraguai': 'https://flagcdn.com/w80/py.png',
-  'Países Baixos': 'https://flagcdn.com/w80/nl.png',
-  'França': 'https://flagcdn.com/w80/fr.png',
-  'Suécia': 'https://flagcdn.com/w80/se.png',
-  'Equador': 'https://flagcdn.com/w80/ec.png',
-  'Bélgica': 'https://flagcdn.com/w80/be.png',
-  'Áustria': 'https://flagcdn.com/w80/at.png',
-  'Cabo Verde': 'https://flagcdn.com/w80/cv.png',
-  'Colômbia': 'https://flagcdn.com/w80/co.png',
-  'Gana': 'https://flagcdn.com/w80/gh.png',
-  'Inglaterra': 'https://flagcdn.com/w80/gb-eng.png',
-  'Portugal': 'https://flagcdn.com/w80/pt.png',
-  'Egito': 'https://flagcdn.com/w80/eg.png',
-  'Suíça': 'https://flagcdn.com/w80/ch.png'
-};
-
-// Função para retornar a bandeira ou uma imagem padrão caso não exista
-function getFlag(teamName) {
-  return TEAM_FLAGS[teamName] || 'https://via.placeholder.com/80?text=🏳️';
-}
-
-/* =========================================================
-   RENDERIZAÇÃO DOS JOGOS
-   ========================================================= */
 function renderMatches(phase = 'todos') {
   const grid = $('#matchesGrid');
   if (!grid) return;
@@ -221,12 +232,12 @@ function renderMatches(phase = 'todos') {
       </div>
       <div class="match-card__teams">
         <div class="match-team">
-          <img src="${getFlag(m.casa)}" alt="${m.casa}" class="match-team__flag-img">
+          ${getFlagImage(m.casa)}
           <span class="match-team__name">${m.casa}</span>
         </div>
         <div class="match-score">${m.golsCasa} : ${m.golsFora}</div>
         <div class="match-team">
-          <img src="${getFlag(m.fora)}" alt="${m.fora}" class="match-team__flag-img">
+          ${getFlagImage(m.fora)}
           <span class="match-team__name">${m.fora}</span>
         </div>
       </div>
@@ -248,138 +259,25 @@ $$('#matchTabs .tab').forEach(tab => {
 });
 
 /* =========================================================
-   3. ESTÁDIOS — Dados locais em JavaScript
+   3. ESTÁDIOS
    ========================================================= */
-
 const STADIUMS = [
-  { 
-    "nome_oficial": "BMO Field",
-    "nome_fifa": "Toronto Stadium",
-    "cidade": "Toronto",
-    "pais": "Canada",
-    "capacidade": 45000,
-    "link": "https://static2.gensler.com/uploads/image/65575/project_BMO_large_01_1475515240.jpg"
-  },
-  { 
-    "nome_oficial": "BC Place",
-    "nome_fifa": "BC Place Vancouver",
-    "cidade": "Vancouver",
-    "pais": "Canada",
-    "capacidade": 54000,
-    "link": "https://images.spaicelabs.com/images/flus6j8v/production/37d069f71f67b4591905dfab4aa98bb4c9703e07-2048x1360.jpg?rect=0,143,2048,1075&w=1200&h=630"
-  },
-  { 
-    "nome_oficial": "Estadio Azteca",
-    "nome_fifa": "Mexico City Stadium",
-    "cidade": "Cidade do Mexico",
-    "pais": "Mexico",
-    "capacidade": 83000,
-    "link": "https://upload.wikimedia.org/wikipedia/commons/4/45/Mexico_city_Estadio_Azteca_estadio_banorte_fifa_world_cup_2026_4.JPG?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original"
-  },
-  { 
-    "nome_oficial": "Estadio Akron",
-    "nome_fifa": "Guadalajara Stadium",
-    "cidade": "Guadalajara",
-    "pais": "Mexico",
-    "capacidade": 48000,
-    "link": "https://cdn.assets-casacor.tec.br/file/casacor-images-news/2026/04/estadio-akron-u0zpgeq6.webp"
-  },
-  { 
-    "nome_oficial": "Estadio BBVA",
-    "nome_fifa": "Monterrey Stadium",
-    "cidade": "Monterrey",
-    "pais": "Mexico",
-    "capacidade": 53500,
-    "link": "https://upload.wikimedia.org/wikipedia/commons/5/57/Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original"
-  },
-  { 
-    "nome_oficial": "MetLife Stadium",
-    "nome_fifa": "New York New Jersey Stadium",
-    "cidade": "East Rutherford",
-    "pais": "Estados Unidos",
-    "capacidade": 82500,
-    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc02vQdSpxEEnLoDnjaXyH4tSlRfgkzRiTw0eEnGpaZ4ZwXekkICSxjw&s=10"
-  },
-  { 
-    "nome_oficial": "AT&T Stadium",
-    "nome_fifa": "Dallas Stadium",
-    "cidade": "Arlington",
-    "pais": "Estados Unidos",
-    "capacidade": 94000,
-    "link": "https://www.hksinc.com/wp-content/uploads/2009/10/ATT_economic-1.jpg"
-  },
-  { 
-    "nome_oficial": "SoFi Stadium",
-    "nome_fifa": "Los Angeles Stadium",
-    "cidade": "Inglewood",
-    "pais": "Estados Unidos",
-    "capacidade": 70000,
-    "link": "https://idsb.tmgrup.com.tr/ly/uploads/images/2026/04/07/435260.jpg"
-  },
-  { 
-    "nome_oficial": "Mercedes-Benz Stadium",
-    "nome_fifa": "Atlanta Stadium",
-    "cidade": "Atlanta",
-    "pais": "Estados Unidos",
-    "capacidade": 75000,
-    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuhsr-WfOIxGx65w-ljXNRkCHM8BiEMha3oFPI5dya9pHl68IuDBxnQ8c&s=10"
-  },
-  { 
-    "nome_oficial": "Hard Rock Stadium",
-    "nome_fifa": "Miami Stadium",
-    "cidade": "Miami",
-    "pais": "Estados Unidos",
-    "capacidade": 65000,
-    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGFSjXRl9Eyc3L-V1Yow3LLG0I5KlQ_BmxlUGDWXUPlsTJ1Of_zzynDVQ&s=10"
-  },
-  { 
-    "nome_oficial": "Gillette Stadium",
-    "nome_fifa": "Boston Stadium",
-    "cidade": "Foxborough",
-    "pais": "Estados Unidos",
-    "capacidade": 65000,
-    "link": "https://upload.wikimedia.org/wikipedia/commons/d/db/Gillette_Stadium_%28Top_View%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original"
-  },
-  { 
-    "nome_oficial": "Levi's Stadium",
-    "nome_fifa": "San Francisco Bay Area Stadium",
-    "cidade": "Santa Clara",
-    "pais": "Estados Unidos",
-    "capacidade": 71000,
-    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85M6cAnQoo6APf7-X-3g-_rW_94i7YhkCKtVzH38DvA&s=10"
-  },
-  { 
-    "nome_oficial": "NRG Stadium",
-    "nome_fifa": "Houston Stadium",
-    "cidade": "Houston",
-    "pais": "Estados Unidos",
-    "capacidade": 72000,
-    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw9lB-moq8aNqId4oEl0O_iurx_eKNp5zJx_5DFKJCBi5MTBtwlrApUocc&s=10"
-  },
-  { 
-    "nome_oficial": "GEHA Field at Arrowhead Stadium",
-    "nome_fifa": "Kansas City Stadium",
-    "cidade": "Kansas City",
-    "pais": "Estados Unidos",
-    "capacidade": 73000,
-    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn_H7AmYYtfcN7my7h47yEiHT2p_eZRHqldjPLSoez8g&s=10"
-  },
-  { 
-    "nome_oficial": "Lincoln Financial Field",
-    "nome_fifa": "Philadelphia Stadium",
-    "cidade": "Philadelphia",
-    "pais": "Estados Unidos",
-    "capacidade": 69000,
-    "link": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Lincoln_Financial_Field_%28Aerial_view%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
-  },
-  { 
-    "nome_oficial": "Lumen Field",
-    "nome_fifa": "Seattle Stadium",
-    "cidade": "Seattle",
-    "pais": "Estados Unidos",
-    "capacidade": 69000,
-    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZzPaw4Q1CWGalyUZ514DrU6JZZWoymLph_AknkMxMeKg8tNjCgxVjmyVr&s=10"
-  }
+  { "nome_oficial": "BMO Field", "nome_fifa": "Toronto Stadium", "cidade": "Toronto", "pais": "Canada", "capacidade": 45000, "link": "https://static2.gensler.com/uploads/image/65575/project_BMO_large_01_1475515240.jpg" },
+  { "nome_oficial": "BC Place", "nome_fifa": "BC Place Vancouver", "cidade": "Vancouver", "pais": "Canada", "capacidade": 54000, "link": "https://images.spaicelabs.com/images/flus6j8v/production/37d069f71f67b4591905dfab4aa98bb4c9703e07-2048x1360.jpg?rect=0,143,2048,1075&w=1200&h=630" },
+  { "nome_oficial": "Estadio Azteca", "nome_fifa": "Mexico City Stadium", "cidade": "Cidade do Mexico", "pais": "Mexico", "capacidade": 83000, "link": "https://upload.wikimedia.org/wikipedia/commons/4/45/Mexico_city_Estadio_Azteca_estadio_banorte_fifa_world_cup_2026_4.JPG?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" },
+  { "nome_oficial": "Estadio Akron", "nome_fifa": "Guadalajara Stadium", "cidade": "Guadalajara", "pais": "Mexico", "capacidade": 48000, "link": "https://cdn.assets-casacor.tec.br/file/casacor-images-news/2026/04/estadio-akron-u0zpgeq6.webp" },
+  { "nome_oficial": "Estadio BBVA", "nome_fifa": "Monterrey Stadium", "cidade": "Monterrey", "pais": "Mexico", "capacidade": 53500, "link": "https://upload.wikimedia.org/wikipedia/commons/5/57/Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" },
+  { "nome_oficial": "MetLife Stadium", "nome_fifa": "New York New Jersey Stadium", "cidade": "East Rutherford", "pais": "Estados Unidos", "capacidade": 82500, "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc02vQdSpxEEnLoDnjaXyH4tSlRfgkzRiTw0eEnGpaZ4ZwXekkICSxjw&s=10" },
+  { "nome_oficial": "AT&T Stadium", "nome_fifa": "Dallas Stadium", "cidade": "Arlington", "pais": "Estados Unidos", "capacidade": 94000, "link": "https://www.hksinc.com/wp-content/uploads/2009/10/ATT_economic-1.jpg" },
+  { "nome_oficial": "SoFi Stadium", "nome_fifa": "Los Angeles Stadium", "cidade": "Inglewood", "pais": "Estados Unidos", "capacidade": 70000, "link": "https://idsb.tmgrup.com.tr/ly/uploads/images/2026/04/07/435260.jpg" },
+  { "nome_oficial": "Mercedes-Benz Stadium", "nome_fifa": "Atlanta Stadium", "cidade": "Atlanta", "pais": "Estados Unidos", "capacidade": 75000, "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuhsr-WfOIxGx65w-ljXNRkCHM8BiEMha3oFPI5dya9pHl68IuDBxnQ8c&s=10" },
+  { "nome_oficial": "Hard Rock Stadium", "nome_fifa": "Miami Stadium", "cidade": "Miami", "pais": "Estados Unidos", "capacidade": 65000, "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGFSjXRl9Eyc3L-V1Yow3LLG0I5KlQ_BmxlUGDWXUPlsTJ1Of_zzynDVQ&s=10" },
+  { "nome_oficial": "Gillette Stadium", "nome_fifa": "Boston Stadium", "cidade": "Foxborough", "pais": "Estados Unidos", "capacidade": 65000, "link": "https://upload.wikimedia.org/wikipedia/commons/d/db/Gillette_Stadium_%28Top_View%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" },
+  { "nome_oficial": "Levi's Stadium", "nome_fifa": "San Francisco Bay Area Stadium", "cidade": "Santa Clara", "pais": "Estados Unidos", "capacidade": 71000, "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85M6cAnQoo6APf7-X-3g-_rW_94i7YhkCKtVzH38DvA&s=10" },
+  { "nome_oficial": "NRG Stadium", "nome_fifa": "Houston Stadium", "cidade": "Houston", "pais": "Estados Unidos", "capacidade": 72000, "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw9lB-moq8aNqId4oEl0O_iurx_eKNp5zJx_5DFKJCBi5MTBtwlrApUocc&s=10" },
+  { "nome_oficial": "GEHA Field at Arrowhead Stadium", "nome_fifa": "Kansas City Stadium", "cidade": "Kansas City", "pais": "Estados Unidos", "capacidade": 73000, "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn_H7AmYYtfcN7my7h47yEiHT2p_eZRHqldjPLSoez8g&s=10" },
+  { "nome_oficial": "Lincoln Financial Field", "nome_fifa": "Philadelphia Stadium", "cidade": "Philadelphia", "pais": "Estados Unidos", "capacidade": 69000, "link": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Lincoln_Financial_Field_%28Aerial_view%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" },
+  { "nome_oficial": "Lumen Field", "nome_fifa": "Seattle Stadium", "cidade": "Seattle", "pais": "Estados Unidos", "capacidade": 69000, "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZzPaw4Q1CWGalyUZ514DrU6JZZWoymLph_AknkMxMeKg8tNjCgxVjmyVr&s=10" }
 ];
 
 let stadiumsData = [...STADIUMS];
@@ -430,9 +328,6 @@ function renderStadiums() {
         </p>
         
         <p class="stadium-card__capacity">Capacidade: ~${s.capacidade.toLocaleString('pt-BR')} lugares</p>
-        <hr>
-        <hr>
-        <br>
         
         ${badgeText ? `<span class="stadium-card__tag">${badgeText}</span>` : ''}
       </article>
@@ -443,7 +338,7 @@ function renderStadiums() {
 $('#stadiumSearch')?.addEventListener('input', renderStadiums);
 
 /* =========================================================
-   4. TABELA — classificação final real dos 12 grupos
+   4. TABELA
    ========================================================= */
 const groupsData = {
   A: [
@@ -547,7 +442,7 @@ function renderStandings() {
 
   body.innerHTML = teams.map(t => `
     <tr class="${t.status.includes('lugar') || t.status.includes('campeão') ? 'qualified' : ''}">
-      <td>${flag(t.time)} ${t.time} class="match-team__flag-img" </td>
+      <td>${flag(t.time)} ${t.time}</td>
       <td class="text-center stat-gold">${t.pts}</td>
       <td class="text-center">${t.sg > 0 ? '+' : ''}${t.sg}</td>
       <td class="text-center status-cell">${t.status}</td>
@@ -556,7 +451,7 @@ function renderStandings() {
 }
 
 /* =========================================================
-   5. NAV — menu mobile, back to top
+   5. NAV
    ========================================================= */
 const navToggle = $('#navToggle');
 const nav = $('#nav');
