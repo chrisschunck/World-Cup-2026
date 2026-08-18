@@ -214,8 +214,7 @@ const STADIUMS = [
     "cidade": "Toronto",
     "pais": "Canada",
     "capacidade": 45000,
-    "link": "https://www.gensler.com/projects/bmo-field",
-    "foto": "URL_DA_FOTO_BMO_FIELD" 
+    "link": "https://www.gensler.com/projects/bmo-field"
   },
   { 
     "nome_oficial": "BC Place",
@@ -223,8 +222,7 @@ const STADIUMS = [
     "cidade": "Vancouver",
     "pais": "Canada",
     "capacidade": 54000,
-    "link": "https://pt.wikipedia.org/wiki/BC_Place",
-    "foto": "URL_DA_FOTO_BC_PLACE" 
+    "link": "https://pt.wikipedia.org/wiki/BC_Place"
   },
   { 
     "nome_oficial": "Estadio Azteca",
@@ -232,8 +230,7 @@ const STADIUMS = [
     "cidade": "Cidade do Mexico",
     "pais": "Mexico",
     "capacidade": 83000,
-    "link": "https://www.guiamexico.com.br/estadio-azteca-cidade-do-mexico/",
-    "foto": "URL_DA_FOTO_ESTADIO_AZTECA" 
+    "link": "https://www.guiamexico.com.br/estadio-azteca-cidade-do-mexico/"
   },
   { 
     "nome_oficial": "Estadio Akron",
@@ -242,7 +239,6 @@ const STADIUMS = [
     "pais": "Mexico",
     "capacidade": 48000,
     "link": "https://www.reddit.com/r/pics/comments/k5gazr/estadio_akron_in_guadalajara_jalisco_mexico/?tl=pt-br",
-    "foto": "URL_DA_FOTO_ESTADIO_AKRON" 
   },
   { 
     "nome_oficial": "Estadio BBVA",
@@ -250,8 +246,7 @@ const STADIUMS = [
     "cidade": "Monterrey",
     "pais": "Mexico",
     "capacidade": 53500,
-    "link": "https://pt.wikipedia.org/wiki/Est%C3%A1dio_BBVA",
-    "foto": "URL_DA_FOTO_ESTADIO_BBVA" 
+    "link": "https://pt.wikipedia.org/wiki/Est%C3%A1dio_BBVA"
   },
   { 
     "nome_oficial": "MetLife Stadium",
@@ -259,8 +254,7 @@ const STADIUMS = [
     "cidade": "East Rutherford",
     "pais": "Estados Unidos",
     "capacidade": 82500,
-    "link": "https://pt.wikipedia.org/wiki/MetLife_Stadium",
-    "foto": "URL_DA_FOTO_METLIFE" 
+    "link": "https://pt.wikipedia.org/wiki/MetLife_Stadium"
   },
   { 
     "nome_oficial": "AT&T Stadium",
@@ -268,8 +262,7 @@ const STADIUMS = [
     "cidade": "Arlington",
     "pais": "Estados Unidos",
     "capacidade": 94000,
-    "link": "https://www.hksinc.com/what-we-do/projects/att-stadium/",
-    "foto": "URL_DA_FOTO_ATT_STADIUM" 
+    "link": "https://www.hksinc.com/what-we-do/projects/att-stadium/"
   },
   { 
     "nome_oficial": "SoFi Stadium",
@@ -277,8 +270,7 @@ const STADIUMS = [
     "cidade": "Inglewood",
     "pais": "Estados Unidos",
     "capacidade": 70000,
-    "link": "https://www.geoquest-group.us/reinforced-earth/sofi-stadium/",
-    "foto": "URL_DA_FOTO_SOFI_STADIUM" 
+    "link": "https://www.geoquest-group.us/reinforced-earth/sofi-stadium/"
   },
   { 
     "nome_oficial": "Mercedes-Benz Stadium",
@@ -286,8 +278,7 @@ const STADIUMS = [
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
     "capacidade": 75000,
-    "link": "https://pt.wikipedia.org/wiki/Mercedes-Benz_Stadium",
-    "foto": "URL_DA_FOTO_MERCEDES_BENZ" 
+    "link": "https://pt.wikipedia.org/wiki/Mercedes-Benz_Stadium"
   },
   { 
     "nome_oficial": "Hard Rock Stadium",
@@ -295,8 +286,7 @@ const STADIUMS = [
     "cidade": "Miami",
     "pais": "Estados Unidos",
     "capacidade": 65000,
-    "link": "https://pt.wikipedia.org/wiki/Hard_Rock_Stadium",
-    "foto": "URL_DA_FOTO_HARD_ROCK" 
+    "link": "https://pt.wikipedia.org/wiki/Hard_Rock_Stadium"
   },
   { 
     "nome_oficial": "Gillette Stadium",
@@ -304,8 +294,7 @@ const STADIUMS = [
     "cidade": "Foxborough",
     "pais": "Estados Unidos",
     "capacidade": 65000,
-    "link": "https://en.wikipedia.org/wiki/Gillette_Stadium",
-    "foto": "URL_DA_FOTO_GILLETTE" 
+    "link": "https://en.wikipedia.org/wiki/Gillette_Stadium"
   },
   { 
     "nome_oficial": "Levi's Stadium",
@@ -313,8 +302,7 @@ const STADIUMS = [
     "cidade": "Santa Clara",
     "pais": "Estados Unidos",
     "capacidade": 71000,
-    "link": "https://pt.wikipedia.org/wiki/Levi%27s_Stadium",
-    "foto": "URL_DA_FOTO_LEVIS" 
+    "link": "https://pt.wikipedia.org/wiki/Levi%27s_Stadium"
   },
   { 
     "nome_oficial": "NRG Stadium",
@@ -322,8 +310,7 @@ const STADIUMS = [
     "cidade": "Houston",
     "pais": "Estados Unidos",
     "capacidade": 72000,
-    "link": "https://www.electricchoice.com/blog/nrg-stadium-energy/",
-    "foto": "URL_DA_FOTO_NRG" 
+    "link": "https://www.electricchoice.com/blog/nrg-stadium-energy/"
   },
   { 
     "nome_oficial": "GEHA Field at Arrowhead Stadium",
@@ -331,8 +318,7 @@ const STADIUMS = [
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
     "capacidade": 73000,
-    "link": "https://pt.wikipedia.org/wiki/Arrowhead_Stadium",
-    "foto": "URL_DA_FOTO_ARROWHEAD" 
+    "link": "https://pt.wikipedia.org/wiki/Arrowhead_Stadium"
   },
   { 
     "nome_oficial": "Lincoln Financial Field",
@@ -340,8 +326,7 @@ const STADIUMS = [
     "cidade": "Philadelphia",
     "pais": "Estados Unidos",
     "capacidade": 69000,
-    "link": "https://flynet.travel/loja/filadelfia-ingresso-lincoln-financial-field-tour-eagles/",
-    "foto": "URL_DA_FOTO_LINCOLN" 
+    "link": "https://flynet.travel/loja/filadelfia-ingresso-lincoln-financial-field-tour-eagles/"
   },
   { 
     "nome_oficial": "Lumen Field",
@@ -349,8 +334,7 @@ const STADIUMS = [
     "cidade": "Seattle",
     "pais": "Estados Unidos",
     "capacidade": 69000,
-    "link": "https://stadium.org/lumen-field/directions/",
-    "foto": "URL_DA_FOTO_LUMEN" 
+    "link": "https://stadium.org/lumen-field/directions/"
   }
 ];
 
@@ -389,7 +373,7 @@ function renderStadiums() {
         <span class="stadium-card__icon">🏟️</span>
         <div class="stadium__photo">
           <a href="${s.link}" target="_blank" rel="noopener noreferrer">
-            <img src="${s.foto}" alt="${s.nome_oficial}" onerror="this.src='https://via.placeholder.com/400x250?text=Estadio'">
+            <img src="${s.link}" alt="${s.nome_oficial}" onerror="this.src='https://via.placeholder.com/400x250?text=Estadio'">
           </a>
         </div>
         <h4 class="stadium-card__title">
