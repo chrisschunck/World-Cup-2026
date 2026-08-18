@@ -509,13 +509,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     position: relative;
 }
 
-/* Ícone de placeholder caso não haja foto */
-.stadium__photo::before {
-    content: '🏟️';
-    font-size: 3rem;
-    opacity: 0.3;
-}
-
 /* Ajuste da imagem para ocupar o espaço */
 .stadium__photo img {
     width: 100%;
