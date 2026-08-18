@@ -238,7 +238,7 @@ const STADIUMS = [
     "cidade": "Guadalajara",
     "pais": "Mexico",
     "capacidade": 48000,
-    "link": "https://www.reddit.com/r/pics/comments/k5gazr/estadio_akron_in_guadalajara_jalisco_mexico/?tl=pt-br",
+    "link": "https://www.reddit.com/r/pics/comments/k5gazr/estadio_akron_in_guadalajara_jalisco_mexico/?tl=pt-br"
   },
   { 
     "nome_oficial": "Estadio BBVA",
@@ -368,30 +368,30 @@ function renderStadiums() {
     if (s.nome_oficial === 'MetLife Stadium') badgeText = 'Palco da Grande Final';
     else if (s.nome_oficial === 'Estadio Azteca') badgeText = 'Jogo de Abertura';
 
-    // ... dentro do seu renderStadiums, no .map():
-
-return `
-  <article class="stadium-card">
-    <div class="stadium__photo">
-      <img src="${s.link}" alt="${s.nome_oficial}" onerror="this.style.display='none'">
-    </div>
-    
-    <h4 class="stadium-card__title">
-      <a href="${s.link}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-        ${s.nome_oficial}
-      </a>
-    </h4>
-    
-    <p class="stadium-card__location">
-      ${countryFlags[s.pais] || '🏳️'} ${s.cidade}, ${s.pais} <br>
-      <small style="opacity: 0.7;">FIFA: ${s.nome_fifa}</small>
-    </p>
-    
-    <p class="stadium-card__capacity">Capacidade: ~${s.capacidade.toLocaleString('pt-BR')} lugares</p>
-    
-    ${badgeText ? `<span class="stadium-card__tag">${badgeText}</span>` : ''}
-  </article>
-`;
+    return `
+      <article class="stadium-card">
+        <div class="stadium__photo">
+          <img src="${s.link}" alt="${s.nome_oficial}" onerror="this.style.display='none'">
+        </div>
+        
+        <h4 class="stadium-card__title">
+          <a href="${s.link}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+            ${s.nome_oficial}
+          </a>
+        </h4>
+        
+        <p class="stadium-card__location">
+          ${countryFlags[s.pais] || '🏳️'} ${s.cidade}, ${s.pais} <br>
+          <small style="opacity: 0.7;">FIFA: ${s.nome_fifa}</small>
+        </p>
+        
+        <p class="stadium-card__capacity">Capacidade: ~${s.capacidade.toLocaleString('pt-BR')} lugares</p>
+        
+        ${badgeText ? `<span class="stadium-card__tag">${badgeText}</span>` : ''}
+      </article>
+    `;
+  }).join('');
+}
 
 $('#stadiumSearch')?.addEventListener('input', renderStadiums);
 
@@ -536,10 +536,6 @@ backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: '
    INIT
    ========================================================= */
 document.addEventListener('DOMContentLoaded', () => {
-  console.log("DOM carregado, iniciando renderização...");
-
-  // 1. Artilharia: Se você não tem um arquivo profile.json,
-  // remova o fetch e coloque os dados direto em um array como fizemos com os estádios.
   loadScorers(); 
   renderStadiums(); 
   renderMatches();
