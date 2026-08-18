@@ -278,7 +278,7 @@ const STADIUMS = [
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
     "capacidade": 75000,
-    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4g2jdCTV5ARvXBshVZh7haTbZzdP9Qk_egbie09FRtD0PW_DukT8m2MM&s=10"
+    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuhsr-WfOIxGx65w-ljXNRkCHM8BiEMha3oFPI5dya9pHl68IuDBxnQ8c&s=10"
   },
   { 
     "nome_oficial": "Hard Rock Stadium",
