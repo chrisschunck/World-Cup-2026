@@ -13,27 +13,7 @@ function initials(name) {
 }
 
 /* =========================================================
-   MAPEAMENTO DE EMOJIS (Para Artilharia e Tabela)
-   ========================================================= */
-const FLAGS = {
-  'França': '🇫🇷', 'Argentina': '🇦🇷', 'Inglaterra': '🏴', 'Noruega': '🇳🇴',
-  'Espanha': '🇪🇸', 'Senegal': '🇸🇳', 'México': '🇲🇽', 'Brasil': '🇧🇷',
-  'Alemanha': '🇩🇪', 'Suíça': '🇨🇭', 'Bélgica': '🇧🇪', 'Países Baixos': '🇳🇱',
-  'Nova Zelândia': '🇳🇿', 'Estados Unidos': '🇺🇸', 'Marrocos': '🇲🇦', 'Canadá': '🇨🇦',
-  'Portugal': '🇵🇹', 'Colômbia': '🇨🇴', 'Costa do Marfim': '🇨🇮', 'Bósnia e Herzegovina': '🇧🇦',
-  'Áustria': '🇦🇹', 'Suécia': '🇸🇪', 'Japão': '🇯🇵', 'Egito': '🇪🇬', 'Argélia': '🇩🇿',
-  'Irã': '🇮🇷', 'Uruguai': '🇺🇾', 'RD Congo': '🇨🇩', 'Croácia': '🇭🇷',
-  'Curaçao': '🇨🇼', 'Equador': '🇪🇨', 'Coreia do Sul': '🇰🇷', 'Austrália': '🇦🇺',
-  'Gana': '🇬🇭', 'Tunísia': '🇹🇳', 'Cabo Verde': '🇨🇻', 'Jordânia': '🇯🇴',
-  'Uzbequistão': '🇺🇿', 'Paraguai': '🇵🇾', 'Panamá': '🇵🇦', 'Haiti': '🇭🇹',
-  'Arábia Saudita': '🇸🇦', 'Catar': '🇶🇦', 'Escócia': '🏴', 'Turquia': '🇹🇷',
-  'Tchéquia': '🇨🇿', 'África do Sul': '🇿🇦', 'Iraque': '🇮🇶'
-};
-
-function flag(team) { return FLAGS[team] || '🏳️'; }
-
-/* =========================================================
-   MAPEAMENTO DE BANDEIRAS EM IMAGEM (Para Jogos)
+   MAPEAMENTO DE BANDEIRAS EM IMAGEM (Usado em Jogos, Tabela e Artilharia)
    ========================================================= */
 const TEAM_FLAGS = {
   'México': 'https://flagcdn.com/w80/mx.png',
@@ -85,9 +65,15 @@ const TEAM_FLAGS = {
   'Croácia': 'https://flagcdn.com/w80/hr.png'
 };
 
-function getFlagImage(teamName) {
+// Função unificada que retorna a imagem da bandeira para QUALQUER seção (Artilharia, Jogos, Tabela)
+function flag(teamName) {
   const url = TEAM_FLAGS[teamName] || 'https://via.placeholder.com/80?text=🏳️';
-  return `<img src="${url}" alt="${teamName}" class="match-team__flag-img" style="vertical-align: middle; margin-right: 6px;">`;
+  return `<img src="${url}" alt="${teamName}" class="match-team__flag-img" style="vertical-align: middle; margin-right: 6px; width: 24px; height: 16px; object-fit: cover; border-radius: 2px;">`;
+}
+
+// Mantemos o apelido caso algum lugar use getFlagImage
+function getFlagImage(teamName) {
+  return flag(teamName);
 }
 
 /* =========================================================
@@ -232,12 +218,12 @@ function renderMatches(phase = 'todos') {
       </div>
       <div class="match-card__teams">
         <div class="match-team">
-          ${getFlagImage(m.casa)}
+          ${flag(m.casa)}
           <span class="match-team__name">${m.casa}</span>
         </div>
         <div class="match-score">${m.golsCasa} : ${m.golsFora}</div>
         <div class="match-team">
-          ${getFlagImage(m.fora)}
+          ${flag(m.fora)}
           <span class="match-team__name">${m.fora}</span>
         </div>
       </div>
