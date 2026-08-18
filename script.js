@@ -204,21 +204,157 @@ $$('#matchTabs .tab').forEach(tab => {
 });
 
 /* =========================================================
-   3. ESTÁDIOS — fetch stadiums.json
+   3. ESTÁDIOS — Dados locais em JavaScript
    ========================================================= */
-let stadiumsData = [];
 
-async function loadStadiums() {
-  try {
-    const res = await fetch('stadiums.json');
-    if (!res.ok) throw new Error('Falha ao carregar stadiums.json');
-    stadiumsData = await res.json();
-  } catch (err) {
-    console.error(err);
-    stadiumsData = [];
+const STADIUMS = [
+  { 
+    "nome_oficial": "BMO Field",
+    "nome_fifa": "Toronto Stadium",
+    "cidade": "Toronto",
+    "pais": "Canada",
+    "capacidade": 45000,
+    "link": "https://www.gensler.com/projects/bmo-field",
+    "foto": "URL_DA_FOTO_BMO_FIELD" 
+  },
+  { 
+    "nome_oficial": "BC Place",
+    "nome_fifa": "BC Place Vancouver",
+    "cidade": "Vancouver",
+    "pais": "Canada",
+    "capacidade": 54000,
+    "link": "https://pt.wikipedia.org/wiki/BC_Place",
+    "foto": "URL_DA_FOTO_BC_PLACE" 
+  },
+  { 
+    "nome_oficial": "Estadio Azteca",
+    "nome_fifa": "Mexico City Stadium",
+    "cidade": "Cidade do Mexico",
+    "pais": "Mexico",
+    "capacidade": 83000,
+    "link": "https://www.guiamexico.com.br/estadio-azteca-cidade-do-mexico/",
+    "foto": "URL_DA_FOTO_ESTADIO_AZTECA" 
+  },
+  { 
+    "nome_oficial": "Estadio Akron",
+    "nome_fifa": "Guadalajara Stadium",
+    "cidade": "Guadalajara",
+    "pais": "Mexico",
+    "capacidade": 48000,
+    "link": "https://www.reddit.com/r/pics/comments/k5gazr/estadio_akron_in_guadalajara_jalisco_mexico/?tl=pt-br",
+    "foto": "URL_DA_FOTO_ESTADIO_AKRON" 
+  },
+  { 
+    "nome_oficial": "Estadio BBVA",
+    "nome_fifa": "Monterrey Stadium",
+    "cidade": "Monterrey",
+    "pais": "Mexico",
+    "capacidade": 53500,
+    "link": "https://pt.wikipedia.org/wiki/Est%C3%A1dio_BBVA",
+    "foto": "URL_DA_FOTO_ESTADIO_BBVA" 
+  },
+  { 
+    "nome_oficial": "MetLife Stadium",
+    "nome_fifa": "New York New Jersey Stadium",
+    "cidade": "East Rutherford",
+    "pais": "Estados Unidos",
+    "capacidade": 82500,
+    "link": "https://pt.wikipedia.org/wiki/MetLife_Stadium",
+    "foto": "URL_DA_FOTO_METLIFE" 
+  },
+  { 
+    "nome_oficial": "AT&T Stadium",
+    "nome_fifa": "Dallas Stadium",
+    "cidade": "Arlington",
+    "pais": "Estados Unidos",
+    "capacidade": 94000,
+    "link": "https://www.hksinc.com/what-we-do/projects/att-stadium/",
+    "foto": "URL_DA_FOTO_ATT_STADIUM" 
+  },
+  { 
+    "nome_oficial": "SoFi Stadium",
+    "nome_fifa": "Los Angeles Stadium",
+    "cidade": "Inglewood",
+    "pais": "Estados Unidos",
+    "capacidade": 70000,
+    "link": "https://www.geoquest-group.us/reinforced-earth/sofi-stadium/",
+    "foto": "URL_DA_FOTO_SOFI_STADIUM" 
+  },
+  { 
+    "nome_oficial": "Mercedes-Benz Stadium",
+    "nome_fifa": "Atlanta Stadium",
+    "cidade": "Atlanta",
+    "pais": "Estados Unidos",
+    "capacidade": 75000,
+    "link": "https://pt.wikipedia.org/wiki/Mercedes-Benz_Stadium",
+    "foto": "URL_DA_FOTO_MERCEDES_BENZ" 
+  },
+  { 
+    "nome_oficial": "Hard Rock Stadium",
+    "nome_fifa": "Miami Stadium",
+    "cidade": "Miami",
+    "pais": "Estados Unidos",
+    "capacidade": 65000,
+    "link": "https://pt.wikipedia.org/wiki/Hard_Rock_Stadium",
+    "foto": "URL_DA_FOTO_HARD_ROCK" 
+  },
+  { 
+    "nome_oficial": "Gillette Stadium",
+    "nome_fifa": "Boston Stadium",
+    "cidade": "Foxborough",
+    "pais": "Estados Unidos",
+    "capacidade": 65000,
+    "link": "https://en.wikipedia.org/wiki/Gillette_Stadium",
+    "foto": "URL_DA_FOTO_GILLETTE" 
+  },
+  { 
+    "nome_oficial": "Levi's Stadium",
+    "nome_fifa": "San Francisco Bay Area Stadium",
+    "cidade": "Santa Clara",
+    "pais": "Estados Unidos",
+    "capacidade": 71000,
+    "link": "https://pt.wikipedia.org/wiki/Levi%27s_Stadium",
+    "foto": "URL_DA_FOTO_LEVIS" 
+  },
+  { 
+    "nome_oficial": "NRG Stadium",
+    "nome_fifa": "Houston Stadium",
+    "cidade": "Houston",
+    "pais": "Estados Unidos",
+    "capacidade": 72000,
+    "link": "https://www.electricchoice.com/blog/nrg-stadium-energy/",
+    "foto": "URL_DA_FOTO_NRG" 
+  },
+  { 
+    "nome_oficial": "GEHA Field at Arrowhead Stadium",
+    "nome_fifa": "Kansas City Stadium",
+    "cidade": "Kansas City",
+    "pais": "Estados Unidos",
+    "capacidade": 73000,
+    "link": "https://pt.wikipedia.org/wiki/Arrowhead_Stadium",
+    "foto": "URL_DA_FOTO_ARROWHEAD" 
+  },
+  { 
+    "nome_oficial": "Lincoln Financial Field",
+    "nome_fifa": "Philadelphia Stadium",
+    "cidade": "Philadelphia",
+    "pais": "Estados Unidos",
+    "capacidade": 69000,
+    "link": "https://flynet.travel/loja/filadelfia-ingresso-lincoln-financial-field-tour-eagles/",
+    "foto": "URL_DA_FOTO_LINCOLN" 
+  },
+  { 
+    "nome_oficial": "Lumen Field",
+    "nome_fifa": "Seattle Stadium",
+    "cidade": "Seattle",
+    "pais": "Estados Unidos",
+    "capacidade": 69000,
+    "link": "https://stadium.org/lumen-field/directions/",
+    "foto": "URL_DA_FOTO_LUMEN" 
   }
-  renderStadiums();
-}
+];
+
+let stadiumsData = [...STADIUMS];
 
 function renderStadiums() {
   const grid = $('#stadiumsGrid');
@@ -252,9 +388,15 @@ function renderStadiums() {
       <article class="stadium-card">
         <span class="stadium-card__icon">🏟️</span>
         <div class="stadium__photo">
-          <img src="${s.foto}" alt="${s.nome_oficial}">
+          <a href="${s.link}" target="_blank" rel="noopener noreferrer">
+            <img src="${s.foto}" alt="${s.nome_oficial}" onerror="this.src='https://via.placeholder.com/400x250?text=Estadio'">
+          </a>
         </div>
-        <h4 class="stadium-card__title">${s.nome_oficial}</h4>
+        <h4 class="stadium-card__title">
+          <a href="${s.link}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+            ${s.nome_oficial}
+          </a>
+        </h4>
         <p class="stadium-card__location">${countryFlags[s.pais] || '🏳️'} ${s.cidade}, ${s.pais} <br><small style="opacity: 0.7;">FIFA: ${s.nome_fifa}</small></p>
         <p class="stadium-card__capacity">Capacidade: ~${s.capacidade.toLocaleString('pt-BR')} lugares</p>
         ${badgeText ? `<span class="stadium-card__tag">${badgeText}</span>` : ''}
@@ -407,7 +549,7 @@ backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: '
    ========================================================= */
 document.addEventListener('DOMContentLoaded', () => {
   loadScorers();
-  loadStadiums();
+  renderStadiums(); // Renderiza diretamente com os dados locais
   renderMatches();
   renderGroupSelect();
   renderStandings();
