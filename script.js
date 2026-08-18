@@ -214,7 +214,7 @@ const STADIUMS = [
     "cidade": "Toronto",
     "pais": "Canada",
     "capacidade": 45000,
-    "link": "https://www.gensler.com/projects/bmo-field"
+    "link": "https://static2.gensler.com/uploads/image/65575/project_BMO_large_01_1475515240.jpg"
   },
   { 
     "nome_oficial": "BC Place",
@@ -222,7 +222,7 @@ const STADIUMS = [
     "cidade": "Vancouver",
     "pais": "Canada",
     "capacidade": 54000,
-    "link": "https://pt.wikipedia.org/wiki/BC_Place"
+    "link": "https://images.spaicelabs.com/images/flus6j8v/production/37d069f71f67b4591905dfab4aa98bb4c9703e07-2048x1360.jpg?rect=0,143,2048,1075&w=1200&h=630"
   },
   { 
     "nome_oficial": "Estadio Azteca",
@@ -230,7 +230,7 @@ const STADIUMS = [
     "cidade": "Cidade do Mexico",
     "pais": "Mexico",
     "capacidade": 83000,
-    "link": "https://www.guiamexico.com.br/estadio-azteca-cidade-do-mexico/"
+    "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg/330px-Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
   },
   { 
     "nome_oficial": "Estadio Akron",
@@ -238,7 +238,7 @@ const STADIUMS = [
     "cidade": "Guadalajara",
     "pais": "Mexico",
     "capacidade": 48000,
-    "link": "https://www.reddit.com/r/pics/comments/k5gazr/estadio_akron_in_guadalajara_jalisco_mexico/?tl=pt-br"
+    "link": "https://cdn.assets-casacor.tec.br/file/casacor-images-news/2026/04/estadio-akron-u0zpgeq6.webp"
   },
   { 
     "nome_oficial": "Estadio BBVA",
@@ -246,7 +246,7 @@ const STADIUMS = [
     "cidade": "Monterrey",
     "pais": "Mexico",
     "capacidade": 53500,
-    "link": "https://pt.wikipedia.org/wiki/Est%C3%A1dio_BBVA"
+    "link": "https://upload.wikimedia.org/wikipedia/commons/5/57/Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original"
   },
   { 
     "nome_oficial": "MetLife Stadium",
@@ -254,7 +254,7 @@ const STADIUMS = [
     "cidade": "East Rutherford",
     "pais": "Estados Unidos",
     "capacidade": 82500,
-    "link": "https://pt.wikipedia.org/wiki/MetLife_Stadium"
+    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwa6tXGQ-4H-ZdtXHX4G8SKbbI0Eo32TYM_Qn7Ptq1fw&s"
   },
   { 
     "nome_oficial": "AT&T Stadium",
@@ -262,7 +262,7 @@ const STADIUMS = [
     "cidade": "Arlington",
     "pais": "Estados Unidos",
     "capacidade": 94000,
-    "link": "https://www.hksinc.com/what-we-do/projects/att-stadium/"
+    "link": "https://www.hksinc.com/wp-content/uploads/2009/10/ATT_economic-1.jpg"
   },
   { 
     "nome_oficial": "SoFi Stadium",
@@ -270,7 +270,7 @@ const STADIUMS = [
     "cidade": "Inglewood",
     "pais": "Estados Unidos",
     "capacidade": 70000,
-    "link": "https://www.geoquest-group.us/reinforced-earth/sofi-stadium/"
+    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThTNdIYpIT6Qw7mE7Ql3s_jtkv66U5c2AhIDx0kJqGvh2SRYWo7cWCNk0&s=10"
   },
   { 
     "nome_oficial": "Mercedes-Benz Stadium",
@@ -278,7 +278,7 @@ const STADIUMS = [
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
     "capacidade": 75000,
-    "link": "https://pt.wikipedia.org/wiki/Mercedes-Benz_Stadium"
+    "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg/330px-Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
   },
   { 
     "nome_oficial": "Hard Rock Stadium",
@@ -286,7 +286,7 @@ const STADIUMS = [
     "cidade": "Miami",
     "pais": "Estados Unidos",
     "capacidade": 65000,
-    "link": "https://pt.wikipedia.org/wiki/Hard_Rock_Stadium"
+    "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/200127-H-PX819-0092.jpg/330px-200127-H-PX819-0092.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
   },
   { 
     "nome_oficial": "Gillette Stadium",
@@ -294,7 +294,7 @@ const STADIUMS = [
     "cidade": "Foxborough",
     "pais": "Estados Unidos",
     "capacidade": 65000,
-    "link": "https://en.wikipedia.org/wiki/Gillette_Stadium"
+    "link": "https://upload.wikimedia.org/wikipedia/commons/d/db/Gillette_Stadium_%28Top_View%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original"
   },
   { 
     "nome_oficial": "Levi's Stadium",
@@ -302,7 +302,7 @@ const STADIUMS = [
     "cidade": "Santa Clara",
     "pais": "Estados Unidos",
     "capacidade": 71000,
-    "link": "https://pt.wikipedia.org/wiki/Levi%27s_Stadium"
+    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85M6cAnQoo6APf7-X-3g-_rW_94i7YhkCKtVzH38DvA&s=10"
   },
   { 
     "nome_oficial": "NRG Stadium",
@@ -310,7 +310,7 @@ const STADIUMS = [
     "cidade": "Houston",
     "pais": "Estados Unidos",
     "capacidade": 72000,
-    "link": "https://www.electricchoice.com/blog/nrg-stadium-energy/"
+    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw9lB-moq8aNqId4oEl0O_iurx_eKNp5zJx_5DFKJCBi5MTBtwlrApUocc&s=10"
   },
   { 
     "nome_oficial": "GEHA Field at Arrowhead Stadium",
@@ -318,7 +318,7 @@ const STADIUMS = [
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
     "capacidade": 73000,
-    "link": "https://pt.wikipedia.org/wiki/Arrowhead_Stadium"
+    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn_H7AmYYtfcN7my7h47yEiHT2p_eZRHqldjPLSoez8g&s=10"
   },
   { 
     "nome_oficial": "Lincoln Financial Field",
@@ -326,7 +326,7 @@ const STADIUMS = [
     "cidade": "Philadelphia",
     "pais": "Estados Unidos",
     "capacidade": 69000,
-    "link": "https://flynet.travel/loja/filadelfia-ingresso-lincoln-financial-field-tour-eagles/"
+    "link": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Lincoln_Financial_Field_%28Aerial_view%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
   },
   { 
     "nome_oficial": "Lumen Field",
@@ -334,7 +334,7 @@ const STADIUMS = [
     "cidade": "Seattle",
     "pais": "Estados Unidos",
     "capacidade": 69000,
-    "link": "https://stadium.org/lumen-field/directions/"
+    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZzPaw4Q1CWGalyUZ514DrU6JZZWoymLph_AknkMxMeKg8tNjCgxVjmyVr&s=10"
   }
 ];
 
