@@ -1,114 +1,114 @@
 [
-      {
-        "nome_oficial": "BMO Field",
-        "nome_fifa": "Toronto Stadium",
-        "cidade": "Toronto",
-        "pais": "Canada",
-        "capacidade": 45000
-      },
-      {
-        "nome_oficial": "BC Place",
-        "nome_fifa": "BC Place Vancouver",
-        "cidade": "Vancouver",
-        "pais": "Canada",
-        "capacidade": 54000
-      },
-      {
-        "nome_oficial": "Estadio Azteca",
-        "nome_fifa": "Mexico City Stadium",
-        "cidade": "Cidade do Mexico",
-        "pais": "Mexico",
-        "capacidade": 83000
-      },
-      {
-        "nome_oficial": "Estadio Akron",
-        "nome_fifa": "Guadalajara Stadium",
-        "cidade": "Guadalajara",
-        "pais": "Mexico",
-        "capacidade": 48000
-      },
-      {
-        "nome_oficial": "Estadio BBVA",
-        "nome_fifa": "Monterrey Stadium",
-        "cidade": "Monterrey",
-        "pais": "Mexico",
-        "capacidade": 53500
-      },
-      {
-        "nome_oficial": "MetLife Stadium",
-        "nome_fifa": "New York New Jersey Stadium",
-        "cidade": "East Rutherford",
-        "pais": "Estados Unidos",
-        "capacidade": 82500
-      },
-      {
-        "nome_oficial": "AT&T Stadium",
-        "nome_fifa": "Dallas Stadium",
-        "cidade": "Arlington",
-        "pais": "Estados Unidos",
-        "capacidade": 94000
-      },
-      {
-        "nome_oficial": "SoFi Stadium",
-        "nome_fifa": "Los Angeles Stadium",
-        "cidade": "Inglewood",
-        "pais": "Estados Unidos",
-        "capacidade": 70000
-      },
-      {
-        "nome_oficial": "Mercedes-Benz Stadium",
-        "nome_fifa": "Atlanta Stadium",
-        "cidade": "Atlanta",
-        "pais": "Estados Unidos",
-        "capacidade": 75000
-      },
-      {
-        "nome_oficial": "Hard Rock Stadium",
-        "nome_fifa": "Miami Stadium",
-        "cidade": "Miami",
-        "pais": "Estados Unidos",
-        "capacidade": 65000
-      },
-      {
-        "nome_oficial": "Gillette Stadium",
-        "nome_fifa": "Boston Stadium",
-        "cidade": "Foxborough",
-        "pais": "Estados Unidos",
-        "capacidade": 65000
-      },
-      {
-        "nome_oficial": "Levi's Stadium",
-        "nome_fifa": "San Francisco Bay Area Stadium",
-        "cidade": "Santa Clara",
-        "pais": "Estados Unidos",
-        "capacidade": 71000
-      },
-      {
-        "nome_oficial": "NRG Stadium",
-        "nome_fifa": "Houston Stadium",
-        "cidade": "Houston",
-        "pais": "Estados Unidos",
-        "capacidade": 72000
-      },
-      {
-        "nome_oficial": "GEHA Field at Arrowhead Stadium",
-        "nome_fifa": "Kansas City Stadium",
-        "cidade": "Kansas City",
-        "pais": "Estados Unidos",
-        "capacidade": 73000
-      },
-      {
-        "nome_oficial": "Lincoln Financial Field",
-        "nome_fifa": "Philadelphia Stadium",
-        "cidade": "Philadelphia",
-        "pais": "Estados Unidos",
-        "capacidade": 69000
-      },
-      {
-        "nome_oficial": "Lumen Field",
-        "nome_fifa": "Seattle Stadium",
-        "cidade": "Seattle",
-        "pais": "Estados Unidos",
-        "capacidade": 69000
-      }
-    ]
+  {
+    "nome_oficial": "BMO Field",
+    "nome_fifa": "Toronto Stadium",
+    "cidade": "Toronto",
+    "pais": "Canada",
+    "capacidade": 45000
+  },
+  {
+    "nome_oficial": "BC Place",
+    "nome_fifa": "BC Place Vancouver",
+    "cidade": "Vancouver",
+    "pais": "Canada",
+    "capacidade": 54000
+  },
+  {
+    "nome_oficial": "Estadio Azteca",
+    "nome_fifa": "Mexico City Stadium",
+    "cidade": "Cidade do Mexico",
+    "pais": "Mexico",
+    "capacidade": 83000
+  },
+  {
+    "nome_oficial": "Estadio Akron",
+    "nome_fifa": "Guadalajara Stadium",
+    "cidade": "Guadalajara",
+    "pais": "Mexico",
+    "capacidade": 48000
+  },
+  {
+    "nome_oficial": "Estadio BBVA",
+    "nome_fifa": "Monterrey Stadium",
+    "cidade": "Monterrey",
+    "pais": "Mexico",
+    "capacidade": 53500
+  },
+  {
+    "nome_oficial": "MetLife Stadium",
+    "nome_fifa": "New York New Jersey Stadium",
+    "cidade": "East Rutherford",
+    "pais": "Estados Unidos",
+    "capacidade": 82500
+  },
+  {
+    "nome_oficial": "AT&T Stadium",
+    "nome_fifa": "Dallas Stadium",
+    "cidade": "Arlington",
+    "pais": "Estados Unidos",
+    "capacidade": 94000
+  },
+  {
+    "nome_oficial": "SoFi Stadium",
+    "nome_fifa": "Los Angeles Stadium",
+    "cidade": "Inglewood",
+    "pais": "Estados Unidos",
+    "capacidade": 70000
+  },
+  {
+    "nome_oficial": "Mercedes-Benz Stadium",
+    "nome_fifa": "Atlanta Stadium",
+    "cidade": "Atlanta",
+    "pais": "Estados Unidos",
+    "capacidade": 75000
+  },
+  {
+    "nome_oficial": "Hard Rock Stadium",
+    "nome_fifa": "Miami Stadium",
+    "cidade": "Miami",
+    "pais": "Estados Unidos",
+    "capacidade": 65000
+  },
+  {
+    "nome_oficial": "Gillette Stadium",
+    "nome_fifa": "Boston Stadium",
+    "cidade": "Foxborough",
+    "pais": "Estados Unidos",
+    "capacidade": 65000
+  },
+  {
+    "nome_oficial": "Levi's Stadium",
+    "nome_fifa": "San Francisco Bay Area Stadium",
+    "cidade": "Santa Clara",
+    "pais": "Estados Unidos",
+    "capacidade": 71000
+  },
+  {
+    "nome_oficial": "NRG Stadium",
+    "nome_fifa": "Houston Stadium",
+    "cidade": "Houston",
+    "pais": "Estados Unidos",
+    "capacidade": 72000
+  },
+  {
+    "nome_oficial": "GEHA Field at Arrowhead Stadium",
+    "nome_fifa": "Kansas City Stadium",
+    "cidade": "Kansas City",
+    "pais": "Estados Unidos",
+    "capacidade": 73000
+  },
+  {
+    "nome_oficial": "Lincoln Financial Field",
+    "nome_fifa": "Philadelphia Stadium",
+    "cidade": "Philadelphia",
+    "pais": "Estados Unidos",
+    "capacidade": 69000
+  },
+  {
+    "nome_oficial": "Lumen Field",
+    "nome_fifa": "Seattle Stadium",
+    "cidade": "Seattle",
+    "pais": "Estados Unidos",
+    "capacidade": 69000
+  }
+]
