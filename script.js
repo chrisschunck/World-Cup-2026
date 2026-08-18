@@ -374,7 +374,7 @@ return `
   <article class="stadium-card">
     <div class="stadium__photo">
       <a href="${s.link}" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; height: 100%;">
-        ${s.foto ? `<img src="${s.foto}" alt="${s.nome_oficial}" onerror="this.style.display='none'">` : ''}
+        ${s.link ? `<img src="${s.link}" alt="${s.nome_oficial}" onerror="this.style.display='none'">` : ''}
       </a>
     </div>
     
