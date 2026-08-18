@@ -536,8 +536,12 @@ backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: '
    INIT
    ========================================================= */
 document.addEventListener('DOMContentLoaded', () => {
-  loadScorers();
-  renderStadiums(); // Renderiza diretamente com os dados locais
+  console.log("DOM carregado, iniciando renderização...");
+
+  // 1. Artilharia: Se você não tem um arquivo profile.json,
+  // remova o fetch e coloque os dados direto em um array como fizemos com os estádios.
+  loadScorers(); 
+  renderStadiums(); 
   renderMatches();
   renderGroupSelect();
   renderStandings();
