@@ -473,6 +473,29 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 
 /* =========================================================
+   ESTILOS DE FOTO DO ESTÁDIO (Adicionar ao CSS)
+   ========================================================= */
+.stadium__photo {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: var(--radius-sm);
+    margin-bottom: 16px;
+    background: var(--green-900);
+}
+
+.stadium__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.stadium-card:hover .stadium__photo img {
+    transform: scale(1.05);
+}
+
+/* =========================================================
    ESTADIOS
    ========================================================= */
 .stadiums-grid {
