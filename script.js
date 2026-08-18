@@ -157,6 +157,50 @@ const matchesData = [
   { fase: 'Final', casa: 'Espanha', fora: 'Argentina', golsCasa: 1, golsFora: 0, data: '19 Jul', local: 'New York/New Jersey Stadium', aet: true, campeao: true },
 ];
 
+/* =========================================================
+   MAPEAMENTO DE BANDEIRAS (Imagens)
+   ========================================================= */
+const TEAM_FLAGS = {
+  'México': 'https://flagcdn.com/w80/mx.png',
+  'África do Sul': 'https://flagcdn.com/w80/za.png',
+  'Brasil': 'https://flagcdn.com/w80/br.png',
+  'Marrocos': 'https://flagcdn.com/w80/ma.png',
+  'Argentina': 'https://flagcdn.com/w80/ar.png',
+  'Argélia': 'https://flagcdn.com/w80/dz.png',
+  'Espanha': 'https://flagcdn.com/w80/es.png',
+  'Arábia Saudita': 'https://flagcdn.com/w80/sa.png',
+  'Alemanha': 'https://flagcdn.com/w80/de.png',
+  'Curaçao': 'https://flagcdn.com/w80/cw.png',
+  'Haiti': 'https://flagcdn.com/w80/ht.png',
+  'Noruega': 'https://flagcdn.com/w80/no.png',
+  'Senegal': 'https://flagcdn.com/w80/sn.png',
+  'Escócia': 'https://flagcdn.com/w80/gb-sct.png',
+  'Canadá': 'https://flagcdn.com/w80/ca.png',
+  'Japão': 'https://flagcdn.com/w80/jp.png',
+  'Paraguai': 'https://flagcdn.com/w80/py.png',
+  'Países Baixos': 'https://flagcdn.com/w80/nl.png',
+  'França': 'https://flagcdn.com/w80/fr.png',
+  'Suécia': 'https://flagcdn.com/w80/se.png',
+  'Equador': 'https://flagcdn.com/w80/ec.png',
+  'Bélgica': 'https://flagcdn.com/w80/be.png',
+  'Áustria': 'https://flagcdn.com/w80/at.png',
+  'Cabo Verde': 'https://flagcdn.com/w80/cv.png',
+  'Colômbia': 'https://flagcdn.com/w80/co.png',
+  'Gana': 'https://flagcdn.com/w80/gh.png',
+  'Inglaterra': 'https://flagcdn.com/w80/gb-eng.png',
+  'Portugal': 'https://flagcdn.com/w80/pt.png',
+  'Egito': 'https://flagcdn.com/w80/eg.png',
+  'Suíça': 'https://flagcdn.com/w80/ch.png'
+};
+
+// Função para retornar a bandeira ou uma imagem padrão caso não exista
+function getFlag(teamName) {
+  return TEAM_FLAGS[teamName] || 'https://via.placeholder.com/80?text=🏳️';
+}
+
+/* =========================================================
+   RENDERIZAÇÃO DOS JOGOS
+   ========================================================= */
 function renderMatches(phase = 'todos') {
   const grid = $('#matchesGrid');
   if (!grid) return;
@@ -176,13 +220,13 @@ function renderMatches(phase = 'todos') {
         <span class="badge badge--done">Encerrado</span>
       </div>
       <div class="match-card__teams">
-        <div class="podium-team">
-          <img src="${m.foto}" alt="${m.casa}">
+        <div class="match-team">
+          <img src="${getFlag(m.casa)}" alt="${m.casa}" class="match-team__flag-img">
           <span class="match-team__name">${m.casa}</span>
         </div>
         <div class="match-score">${m.golsCasa} : ${m.golsFora}</div>
-        <div class="podium-team">
-          <img src="${m.foto}" alt="${m.fora}">
+        <div class="match-team">
+          <img src="${getFlag(m.fora)}" alt="${m.fora}" class="match-team__flag-img">
           <span class="match-team__name">${m.fora}</span>
         </div>
       </div>
