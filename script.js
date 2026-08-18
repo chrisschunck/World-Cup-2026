@@ -547,7 +547,7 @@ function renderStandings() {
 
   body.innerHTML = teams.map(t => `
     <tr class="${t.status.includes('lugar') || t.status.includes('campeão') ? 'qualified' : ''}">
-      <td>${getFlag(t.time)} ${t.time} class="match-team__flag-img" </td>
+      <td>${flag(t.time)} ${t.time} class="match-team__flag-img" </td>
       <td class="text-center stat-gold">${t.pts}</td>
       <td class="text-center">${t.sg > 0 ? '+' : ''}${t.sg}</td>
       <td class="text-center status-cell">${t.status}</td>
