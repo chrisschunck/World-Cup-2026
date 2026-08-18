@@ -204,11 +204,66 @@ $$('#matchTabs .tab').forEach(tab => {
 });
 
 /* =========================================================
-   3. TABELA — classificação final real dos 12 grupos
-   Fonte: NBC Sports (standings finais, pontos e saldo de gols)
-   Como o saldo de gols agregado (SG) é o dado oficial disponível
-   por seleção, a tabela usa Pontos + SG reais, sem inventar
-   estatísticas de jogo a jogo que não foram divulgadas.
+   3. ESTÁDIOS — fetch stadiums.json
+   ========================================================= */
+let stadiumsData = [];
+
+async function loadStadiums() {
+  try {
+    const res = await fetch('stadiums.json');
+    if (!res.ok) throw new Error('Falha ao carregar stadiums.json');
+    stadiumsData = await res.json();
+  } catch (err) {
+    console.error(err);
+    stadiumsData = [];
+  }
+  renderStadiums();
+}
+
+function renderStadiums() {
+  const grid = $('#stadiumsGrid');
+  const empty = $('#stadiumsEmpty');
+  if (!grid) return;
+
+  const term = ($('#stadiumSearch')?.value || '').trim().toLowerCase();
+
+  const list = stadiumsData.filter(s =>
+    s.nome_oficial.toLowerCase().includes(term) ||
+    s.nome_fifa.toLowerCase().includes(term) ||
+    s.cidade.toLowerCase().includes(term) ||
+    s.pais.toLowerCase().includes(term)
+  );
+
+  if (list.length === 0) {
+    grid.innerHTML = '';
+    empty?.classList.remove('hidden');
+    return;
+  }
+  empty?.classList.add('hidden');
+
+  const countryFlags = { 'Canada': '🇨🇦', 'Mexico': '🇲🇽', 'Estados Unidos': '🇺🇸' };
+
+  grid.innerHTML = list.map(s => {
+    let badgeText = '';
+    if (s.nome_oficial === 'MetLife Stadium') badgeText = 'Palco da Grande Final';
+    else if (s.nome_oficial === 'Estadio Azteca') badgeText = 'Jogo de Abertura';
+
+    return `
+      <article class="stadium-card">
+        <span class="stadium-card__icon">🏟️</span>
+        <h4 class="stadium-card__title">${s.nome_oficial}</h4>
+        <p class="stadium-card__location">${countryFlags[s.pais] || '🏳️'} ${s.cidade}, ${s.pais} <br><small style="opacity: 0.7;">FIFA: ${s.nome_fifa}</small></p>
+        <p class="stadium-card__capacity">Capacidade: ~${s.capacidade.toLocaleString('pt-BR')} lugares</p>
+        ${badgeText ? `<span class="stadium-card__tag">${badgeText}</span>` : ''}
+      </article>
+    `;
+  }).join('');
+}
+
+$('#stadiumSearch')?.addEventListener('input', renderStadiums);
+
+/* =========================================================
+   4. TABELA — classificação final real dos 12 grupos
    ========================================================= */
 const groupsData = {
   A: [
@@ -321,7 +376,7 @@ function renderStandings() {
 }
 
 /* =========================================================
-   4. NAV — menu mobile, back to top
+   5. NAV — menu mobile, back to top
    ========================================================= */
 const navToggle = $('#navToggle');
 const nav = $('#nav');
@@ -349,6 +404,7 @@ backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: '
    ========================================================= */
 document.addEventListener('DOMContentLoaded', () => {
   loadScorers();
+  loadStadiums();
   renderMatches();
   renderGroupSelect();
   renderStandings();
