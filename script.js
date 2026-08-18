@@ -176,13 +176,13 @@ function renderMatches(phase = 'todos') {
         <span class="badge badge--done">Encerrado</span>
       </div>
       <div class="match-card__teams">
-        <div class="match-team">
-          <span class="match-team__flag">${flag(m.casa)}</span>
+        <div class="podium-team">
+          <img src="${m.foto}" alt="${m.casa}">
           <span class="match-team__name">${m.casa}</span>
         </div>
         <div class="match-score">${m.golsCasa} : ${m.golsFora}</div>
-        <div class="match-team">
-          <span class="match-team__flag">${flag(m.fora)}</span>
+        <div class="podium-team">
+          <img src="${m.foto}" alt="${m.fora}">
           <span class="match-team__name">${m.fora}</span>
         </div>
       </div>
@@ -367,7 +367,7 @@ function renderStadiums() {
     let badgeText = '';
     if (s.nome_oficial === 'MetLife Stadium') badgeText = 'Palco da Grande Final';
     else if (s.nome_oficial === 'Estadio Azteca') badgeText = 'Jogo de Abertura';
-
+    
     return `
       <article class="stadium-card">
         <div class="stadium__photo">
