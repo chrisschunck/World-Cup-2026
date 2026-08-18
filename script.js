@@ -368,26 +368,32 @@ function renderStadiums() {
     if (s.nome_oficial === 'MetLife Stadium') badgeText = 'Palco da Grande Final';
     else if (s.nome_oficial === 'Estadio Azteca') badgeText = 'Jogo de Abertura';
 
-    return `
-      <article class="stadium-card">
-        <span class="stadium-card__icon">🏟️</span>
-        <div class="stadium__photo">
-          <a href="${s.link}" target="_blank" rel="noopener noreferrer">
-            <img src="${s.link}" alt="${s.nome_oficial}" onerror="this.src='https://via.placeholder.com/400x250?text=Estadio'">
-          </a>
-        </div>
-        <h4 class="stadium-card__title">
-          <a href="${s.link}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-            ${s.nome_oficial}
-          </a>
-        </h4>
-        <p class="stadium-card__location">${countryFlags[s.pais] || '🏳️'} ${s.cidade}, ${s.pais} <br><small style="opacity: 0.7;">FIFA: ${s.nome_fifa}</small></p>
-        <p class="stadium-card__capacity">Capacidade: ~${s.capacidade.toLocaleString('pt-BR')} lugares</p>
-        ${badgeText ? `<span class="stadium-card__tag">${badgeText}</span>` : ''}
-      </article>
-    `;
-  }).join('');
-}
+    // ... dentro do seu renderStadiums, no .map():
+
+return `
+  <article class="stadium-card">
+    <div class="stadium__photo">
+      <a href="${s.link}" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; height: 100%;">
+        ${s.foto ? `<img src="${s.foto}" alt="${s.nome_oficial}" onerror="this.style.display='none'">` : ''}
+      </a>
+    </div>
+    
+    <h4 class="stadium-card__title">
+      <a href="${s.link}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+        ${s.nome_oficial}
+      </a>
+    </h4>
+    
+    <p class="stadium-card__location">
+      ${countryFlags[s.pais] || '🏳️'} ${s.cidade}, ${s.pais} <br>
+      <small style="opacity: 0.7;">FIFA: ${s.nome_fifa}</small>
+    </p>
+    
+    <p class="stadium-card__capacity">Capacidade: ~${s.capacidade.toLocaleString('pt-BR')} lugares</p>
+    
+    ${badgeText ? `<span class="stadium-card__tag">${badgeText}</span>` : ''}
+  </article>
+`;
 
 $('#stadiumSearch')?.addEventListener('input', renderStadiums);
 
