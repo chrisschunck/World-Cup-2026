@@ -230,7 +230,7 @@ const STADIUMS = [
     "cidade": "Cidade do Mexico",
     "pais": "Mexico",
     "capacidade": 83000,
-    "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg/330px-Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+    "link": "https://upload.wikimedia.org/wikipedia/commons/4/45/Mexico_city_Estadio_Azteca_estadio_banorte_fifa_world_cup_2026_4.JPG?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original"
   },
   { 
     "nome_oficial": "Estadio Akron",
@@ -254,7 +254,7 @@ const STADIUMS = [
     "cidade": "East Rutherford",
     "pais": "Estados Unidos",
     "capacidade": 82500,
-    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwa6tXGQ-4H-ZdtXHX4G8SKbbI0Eo32TYM_Qn7Ptq1fw&s"
+    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc02vQdSpxEEnLoDnjaXyH4tSlRfgkzRiTw0eEnGpaZ4ZwXekkICSxjw&s=10"
   },
   { 
     "nome_oficial": "AT&T Stadium",
@@ -270,7 +270,7 @@ const STADIUMS = [
     "cidade": "Inglewood",
     "pais": "Estados Unidos",
     "capacidade": 70000,
-    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThTNdIYpIT6Qw7mE7Ql3s_jtkv66U5c2AhIDx0kJqGvh2SRYWo7cWCNk0&s=10"
+    "link": "https://idsb.tmgrup.com.tr/ly/uploads/images/2026/04/07/435260.jpg"
   },
   { 
     "nome_oficial": "Mercedes-Benz Stadium",
@@ -278,7 +278,7 @@ const STADIUMS = [
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
     "capacidade": 75000,
-    "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg/330px-Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4g2jdCTV5ARvXBshVZh7haTbZzdP9Qk_egbie09FRtD0PW_DukT8m2MM&s=10"
   },
   { 
     "nome_oficial": "Hard Rock Stadium",
@@ -286,7 +286,7 @@ const STADIUMS = [
     "cidade": "Miami",
     "pais": "Estados Unidos",
     "capacidade": 65000,
-    "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/200127-H-PX819-0092.jpg/330px-200127-H-PX819-0092.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+    "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGFSjXRl9Eyc3L-V1Yow3LLG0I5KlQ_BmxlUGDWXUPlsTJ1Of_zzynDVQ&s=10"
   },
   { 
     "nome_oficial": "Gillette Stadium",
